@@ -1,0 +1,8 @@
+unique_name: "Average Plane Of Array Irradiance Watts Per Square Meter"
+object_type: "metric"
+label: "Average Plane Of Array Irradiance Watts Per Square Meter"
+description: "Plane Of Array Irradiance Watts Per Square Meter recorded in the irradiance snapshot; missing observations are excluded."
+dataset: "Solar Snapshots"
+column: "poa_irr_w_m2"
+calculation_method: "average"
+format: "#,##0.00"

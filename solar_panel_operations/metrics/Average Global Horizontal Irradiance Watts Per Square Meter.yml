@@ -1,0 +1,8 @@
+unique_name: "Average Global Horizontal Irradiance Watts Per Square Meter"
+object_type: "metric"
+label: "Average Global Horizontal Irradiance Watts Per Square Meter"
+description: "Global Horizontal Irradiance Watts Per Square Meter recorded in the irradiance snapshot; missing observations are excluded."
+dataset: "Solar Snapshots"
+column: "ghi_w_m2"
+calculation_method: "average"
+format: "#,##0.00"

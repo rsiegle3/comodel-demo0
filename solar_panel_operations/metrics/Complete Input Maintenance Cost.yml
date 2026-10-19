@@ -1,0 +1,8 @@
+unique_name: "Complete Input Maintenance Cost"
+object_type: "metric"
+label: "Complete Input Maintenance Cost"
+description: "Complete Input Maintenance Cost across snapshots with all cost inputs present; used for the component-based calculation and excludes incomplete inputs."
+dataset: "Solar Snapshots"
+column: "paired_maintcost"
+calculation_method: "average"
+format: "#,##0.00"

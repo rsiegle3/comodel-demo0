@@ -1,0 +1,8 @@
+unique_name: "Average Dust Density Kilograms Per Cubic Meter"
+object_type: "metric"
+label: "Average Dust Density Kilograms Per Cubic Meter"
+description: "Dust Density Kilograms Per Cubic Meter recorded in the atmospheric snapshot; missing observations are excluded."
+dataset: "Solar Snapshots"
+column: "dust_density_kg_m3"
+calculation_method: "average"
+format: "#,##0.00"

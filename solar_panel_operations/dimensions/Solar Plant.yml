@@ -1,0 +1,126 @@
+unique_name: "Solar Plant"
+object_type: "dimension"
+label: "Solar Plant"
+description: "Solar plant site, such as Solar Plant West Davidport; distinct from the panel model installed there."
+type: "standard"
+level_attributes:
+  -
+    unique_name: "Solar Plant"
+    label: "Solar Plant"
+    description: "Solar plant site, such as Solar Plant West Davidport; distinct from the panel model installed there."
+    dataset: "Solar Plants"
+    key_columns:
+      - "sitekey"
+    name_column: "sitelabel"
+    is_unique_key: true
+hierarchies:
+  -
+    unique_name: "Solar Plant Hierarchy"
+    label: "Solar Plant Hierarchy"
+    filter_empty: "yes"
+    folder: "Solar Plant"
+    levels:
+      -
+        unique_name: "Solar Plant"
+        secondary_attributes:
+          -
+            unique_name: "Plant Capacity MW"
+            label: "Plant Capacity MW"
+            description: "Nameplate plant capacity in megawatts; distinct from panel rated watts."
+            dataset: "Solar Plants"
+            key_columns:
+              - "cap_mw"
+            name_column: "cap_mw"
+          -
+            unique_name: "Plant Commissioning Date"
+            label: "Plant Commissioning Date"
+            description: "Plant go-live date, such as 2018-02-28; not the observation date."
+            dataset: "Solar Plants"
+            key_columns:
+              - "goliveon"
+            name_column: "goliveon"
+          -
+            unique_name: "Plant Tilt Degrees"
+            label: "Plant Tilt Degrees"
+            description: "Fixed plant tilt in degrees; distinct from dynamic tracker angle."
+            dataset: "Solar Plants"
+            key_columns:
+              - "tiltdeg"
+            name_column: "tiltdeg"
+          -
+            unique_name: "Plant Azimuth Degrees"
+            label: "Plant Azimuth Degrees"
+            description: "Plant orientation in degrees; distinct from observed wind direction."
+            dataset: "Solar Plants"
+            key_columns:
+              - "azmdeg"
+            name_column: "azmdeg"
+          -
+            unique_name: "Plant Recycling Status"
+            label: "Plant Recycling Status"
+            description: "Plant recycling documentation, such as Available or In Development; separate from insurance."
+            dataset: "Solar Plants"
+            key_columns:
+              - "recyclenote"
+            name_column: "recyclenote"
+          -
+            unique_name: "Plant Documentation Status"
+            label: "Plant Documentation Status"
+            description: "Plant document completeness: Missing, Partial or Complete; separate from compliance."
+            dataset: "Solar Plants"
+            key_columns:
+              - "docstate"
+            name_column: "docstate"
+          -
+            unique_name: "Plant Warranty Status"
+            label: "Plant Warranty Status"
+            description: "Plant warranty status, such as Claimed, Active or Expired; separate from insurance coverage."
+            dataset: "Solar Plants"
+            key_columns:
+              - "warrstate"
+            name_column: "warrstate"
+          -
+            unique_name: "Plant Warranty Claims"
+            label: "Plant Warranty Claims"
+            description: "Reported warranty claim count associated with the plant; not snapshot alert events."
+            dataset: "Solar Plants"
+            key_columns:
+              - "warrclaims"
+            name_column: "warrclaims"
+          -
+            unique_name: "Plant Insurance Status"
+            label: "Plant Insurance Status"
+            description: "Plant insurance coverage, such as Covered, Expired or Partial; separate from warranty."
+            dataset: "Solar Plants"
+            key_columns:
+              - "insurstate"
+            name_column: "insurstate"
+          -
+            unique_name: "Plant Compliance Status"
+            label: "Plant Compliance Status"
+            description: "Plant compliance category: Compliant, Non-Compliant or Under Review; separate from document completeness."
+            dataset: "Solar Plants"
+            key_columns:
+              - "complyflag"
+            name_column: "complyflag"
+          -
+            unique_name: "Plant Environmental Tag"
+            label: "Plant Environmental Tag"
+            description: "Plant environmental category, such as High, Medium or Low; not a measured weather reading."
+            dataset: "Solar Plants"
+            key_columns:
+              - "envtag"
+            name_column: "envtag"
+relationships:
+  -
+    unique_name: "Plant To Primary Panel Model"
+    from:
+      hierarchy: "Solar Plant Hierarchy"
+      level: "Solar Plant"
+      dataset: "Solar Plants"
+      join_columns:
+        - "modhook"
+    to:
+      dimension: "Solar Panel Model"
+      level: "Solar Panel Model"
+    type: "embedded"

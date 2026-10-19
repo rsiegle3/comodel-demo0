@@ -1,0 +1,8 @@
+unique_name: "Operational Snapshot Count"
+object_type: "metric"
+label: "Operational Snapshot Count"
+description: "Operational detail observations linked to plant snapshots; counts presence of the detail record, not completeness of its measurements."
+dataset: "Solar Snapshots"
+column: "snapops"
+calculation_method: "count non-null"
+format: "#,##0.00"

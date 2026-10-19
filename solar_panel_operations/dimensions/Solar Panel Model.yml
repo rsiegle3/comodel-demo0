@@ -1,0 +1,89 @@
+unique_name: "Solar Panel Model"
+object_type: "dimension"
+label: "Solar Panel Model"
+description: "Primary panel model assigned by the plant record, such as Model-102; not all membership-bridge models."
+type: "standard"
+level_attributes:
+  -
+    unique_name: "Solar Panel Model"
+    label: "Solar Panel Model"
+    description: "Primary panel model assigned by the plant record, such as Model-102; not all membership-bridge models."
+    dataset: "Solar Panel Models"
+    key_columns:
+      - "modkey"
+    name_column: "modkey"
+    is_unique_key: true
+hierarchies:
+  -
+    unique_name: "Solar Panel Model Hierarchy"
+    label: "Solar Panel Model Hierarchy"
+    filter_empty: "yes"
+    folder: "Solar Panel Model"
+    levels:
+      -
+        unique_name: "Solar Panel Model"
+        secondary_attributes:
+          -
+            unique_name: "Panel Manufacturer"
+            label: "Panel Manufacturer"
+            description: "Panel maker such as Longi or Canadian Solar; separate from model code."
+            dataset: "Solar Panel Models"
+            key_columns:
+              - "makertag"
+            name_column: "makertag"
+          -
+            unique_name: "Panel Technology"
+            label: "Panel Technology"
+            description: "Panel technology such as Mono-PERC, HJT or TOPCon; separate from manufacturer."
+            dataset: "Solar Panel Models"
+            key_columns:
+              - "pnlkind"
+            name_column: "pnlkind"
+          -
+            unique_name: "Panel Rated Watts"
+            label: "Panel Rated Watts"
+            description: "Panel nameplate rated power in watts; distinct from measured current power."
+            dataset: "Solar Panel Models"
+            key_columns:
+              - "rated_w"
+            name_column: "rated_w"
+          -
+            unique_name: "Panel Rated Efficiency Percent"
+            label: "Panel Rated Efficiency Percent"
+            description: "Panel model specification efficiency in percentage points; distinct from observed instant efficiency."
+            dataset: "Solar Panel Models"
+            key_columns:
+              - "effpct"
+            name_column: "effpct"
+          -
+            unique_name: "Panel Annual Degradation Rate"
+            label: "Panel Annual Degradation Rate"
+            description: "Panel model annual degradation rate in source units; distinct from observed cumulative degradation percent."
+            dataset: "Solar Panel Models"
+            key_columns:
+              - "degyrrate"
+            name_column: "degyrrate"
+          -
+            unique_name: "Panel Temperature Coefficient"
+            label: "Panel Temperature Coefficient"
+            description: "Panel model temperature coefficient in source units; not measured panel temperature."
+            dataset: "Solar Panel Models"
+            key_columns:
+              - "tempcoeff"
+            name_column: "tempcoeff"
+          -
+            unique_name: "Panel Nominal Temperature Source Text"
+            label: "Panel Nominal Temperature Source Text"
+            description: "Nominal operating temperature text such as 45.7 C; distinct from measured cell temperature."
+            dataset: "Solar Panel Models"
+            key_columns:
+              - "nomoptempc"
+            name_column: "nomoptempc"
+          -
+            unique_name: "Panel Nominal Operating Temperature Celsius"
+            label: "Panel Nominal Operating Temperature Celsius"
+            description: "Numeric nominal operating temperature parsed from the model specification; distinct from measured cell temperature."
+            dataset: "Solar Panel Models"
+            key_columns:
+              - "nominal_temperature_c"
+            name_column: "nominal_temperature_c"

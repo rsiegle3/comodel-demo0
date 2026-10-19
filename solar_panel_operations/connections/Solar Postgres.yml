@@ -1,0 +1,7 @@
+unique_name: "Solar Postgres"
+object_type: "connection"
+label: "Solar Postgres"
+description: "Postgres warehouse source for solar plant operations."
+as_connection: "bird_solar_panel"
+database: "solar_panel"
+schema: "public"

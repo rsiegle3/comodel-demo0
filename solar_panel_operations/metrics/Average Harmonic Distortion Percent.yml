@@ -1,0 +1,8 @@
+unique_name: "Average Harmonic Distortion Percent"
+object_type: "metric"
+label: "Average Harmonic Distortion Percent"
+description: "Harmonic Distortion Percent recorded in the grid snapshot; missing observations are excluded. Values use percentage points, not fractions."
+dataset: "Solar Snapshots"
+column: "harmonic_distortion_pct"
+calculation_method: "average"
+format: "#,##0.00"

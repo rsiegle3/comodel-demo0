@@ -1,0 +1,8 @@
+unique_name: "Average Current Power Watts"
+object_type: "metric"
+label: "Average Current Power Watts"
+description: "Current Power Watts recorded in the power snapshot; missing observations are excluded."
+dataset: "Solar Snapshots"
+column: "power_now_w"
+calculation_method: "average"
+format: "#,##0.00"

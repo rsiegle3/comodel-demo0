@@ -1,0 +1,6 @@
+unique_name: "Average Combined Intervention Cost"
+object_type: "metric_calc"
+label: "Average Combined Intervention Cost"
+description: "Combined maintenance, cleaning and replacement cost per complete-input snapshot in the selected observation calendar slice, in unspecified source currency units; excludes revenue loss and is not period spending. Missing component observations are excluded together."
+expression: "[Measures].[Complete Input Maintenance Cost] + [Measures].[Complete Input Cleaning Cost] + [Measures].[Complete Input Replacement Cost]"
+format: "#,##0.00"

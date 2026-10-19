@@ -1,0 +1,8 @@
+unique_name: "Cost Complete Snapshot Count"
+object_type: "metric"
+label: "Cost Complete Snapshot Count"
+description: "Number of snapshots with every cost formula component non-null; the intersection support count, not total snapshots."
+dataset: "Solar Snapshots"
+column: "cost_complete"
+calculation_method: "sum"
+format: "#,##0.00"

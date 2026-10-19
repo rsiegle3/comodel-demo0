@@ -1,0 +1,8 @@
+unique_name: "Complete Input Cleaning Cost"
+object_type: "metric"
+label: "Complete Input Cleaning Cost"
+description: "Complete Input Cleaning Cost across snapshots with all cost inputs present; used for the component-based calculation and excludes incomplete inputs."
+dataset: "Solar Snapshots"
+column: "paired_cleancost"
+calculation_method: "average"
+format: "#,##0.00"

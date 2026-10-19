@@ -1,0 +1,8 @@
+unique_name: "Average Efficiency Loss Percent"
+object_type: "metric"
+label: "Average Efficiency Loss Percent"
+description: "Efficiency Loss Percent recorded in the efficiency snapshot; missing observations are excluded. Values use percentage points, not fractions."
+dataset: "Solar Snapshots"
+column: "eff_loss_pct"
+calculation_method: "average"
+format: "#,##0.00"

@@ -1,0 +1,8 @@
+unique_name: "Average Current Short Circuit Current Amperes"
+object_type: "metric"
+label: "Average Current Short Circuit Current Amperes"
+description: "Current Short Circuit Current Amperes recorded in the iv curve snapshot; missing observations are excluded."
+dataset: "Solar Snapshots"
+column: "isc_now_a"
+calculation_method: "average"
+format: "#,##0.00"

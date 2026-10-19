@@ -1,0 +1,8 @@
+unique_name: "Average UV Index"
+object_type: "metric"
+label: "Average UV Index"
+description: "UV Index recorded in the atmospheric snapshot; missing observations are excluded."
+dataset: "Solar Snapshots"
+column: "uv_index"
+calculation_method: "average"
+format: "#,##0.00"

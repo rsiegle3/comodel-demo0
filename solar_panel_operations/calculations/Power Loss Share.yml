@@ -1,0 +1,6 @@
+unique_name: "Power Loss Share"
+object_type: "metric_calc"
+label: "Power Loss Share"
+description: "Power loss divided by current power plus loss over complete paired observations in the selected snapshot calendar slice; a ratio displayed as percent, not a mean of row percentages. Empty or zero denominators return null."
+expression: "CASE WHEN ISEMPTY([Measures].[Paired Current Power Watts]) OR ([Measures].[Paired Current Power Watts] + [Measures].[Paired Power Loss Watts]) = 0 THEN NULL ELSE [Measures].[Paired Power Loss Watts] / ([Measures].[Paired Current Power Watts] + [Measures].[Paired Power Loss Watts]) END"
+format: "0.00%"

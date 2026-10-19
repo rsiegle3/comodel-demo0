@@ -1,0 +1,8 @@
+unique_name: "Mechanical Snapshot Count"
+object_type: "metric"
+label: "Mechanical Snapshot Count"
+description: "Mechanical detail observations linked to plant snapshots; counts presence of the detail record, not completeness of its measurements."
+dataset: "Solar Snapshots"
+column: "snapmk"
+calculation_method: "count non-null"
+format: "#,##0.00"

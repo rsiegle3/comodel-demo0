@@ -1,0 +1,8 @@
+unique_name: "Average Air Pressure hPa"
+object_type: "metric"
+label: "Average Air Pressure hPa"
+description: "Air Pressure hPa recorded in the atmospheric snapshot; missing observations are excluded."
+dataset: "Solar Snapshots"
+column: "air_pressure_hpa"
+calculation_method: "average"
+format: "#,##0.00"

@@ -1,0 +1,8 @@
+unique_name: "Average Spectral Mismatch Percent"
+object_type: "metric"
+label: "Average Spectral Mismatch Percent"
+description: "Spectral Mismatch Percent recorded in the efficiency snapshot; missing observations are excluded. Values use percentage points, not fractions."
+dataset: "Solar Snapshots"
+column: "spectral_mismatch"
+calculation_method: "average"
+format: "#,##0.00"

@@ -1,0 +1,8 @@
+unique_name: "Average Grid Frequency Hertz"
+object_type: "metric"
+label: "Average Grid Frequency Hertz"
+description: "Grid Frequency Hertz recorded in the grid snapshot; missing observations are excluded."
+dataset: "Solar Snapshots"
+column: "grid_frequency_hz"
+calculation_method: "average"
+format: "#,##0.00"

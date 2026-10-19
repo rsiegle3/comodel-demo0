@@ -1,0 +1,8 @@
+unique_name: "Average Inverter Efficiency Percent"
+object_type: "metric"
+label: "Average Inverter Efficiency Percent"
+description: "Inverter Efficiency Percent recorded in the inverter snapshot; missing observations are excluded. Values use percentage points, not fractions."
+dataset: "Solar Snapshots"
+column: "inverter_eff_pct"
+calculation_method: "average"
+format: "#,##0.00"

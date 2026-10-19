@@ -1,0 +1,8 @@
+unique_name: "Average Initial Open Circuit Voltage Volts"
+object_type: "metric"
+label: "Average Initial Open Circuit Voltage Volts"
+description: "Initial Open Circuit Voltage Volts recorded in the iv curve snapshot; missing observations are excluded."
+dataset: "Solar Snapshots"
+column: "voc_initial_v"
+calculation_method: "average"
+format: "#,##0.00"

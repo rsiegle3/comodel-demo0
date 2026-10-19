@@ -1,0 +1,8 @@
+unique_name: "Average Revenue Loss"
+object_type: "metric"
+label: "Average Revenue Loss"
+description: "Revenue loss amount recorded per snapshot, parsed from dollar-marked text; currency code and reporting interval are unspecified."
+dataset: "Solar Snapshots"
+column: "revenue_loss"
+calculation_method: "average"
+format: "#,##0.00"

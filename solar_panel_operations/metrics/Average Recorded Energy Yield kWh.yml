@@ -1,0 +1,8 @@
+unique_name: "Average Recorded Energy Yield kWh"
+object_type: "metric"
+label: "Average Recorded Energy Yield kWh"
+description: "Recorded Energy Yield kWh recorded in the energy yield snapshot; missing observations are excluded. Source interval is unspecified; this is an observation mean, not period generation."
+dataset: "Solar Snapshots"
+column: "energy_yield_kwh"
+calculation_method: "average"
+format: "#,##0.00"

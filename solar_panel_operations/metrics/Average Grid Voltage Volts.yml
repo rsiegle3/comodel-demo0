@@ -1,0 +1,8 @@
+unique_name: "Average Grid Voltage Volts"
+object_type: "metric"
+label: "Average Grid Voltage Volts"
+description: "Grid Voltage Volts recorded in the grid snapshot; missing observations are excluded."
+dataset: "Solar Snapshots"
+column: "grid_voltage_v"
+calculation_method: "average"
+format: "#,##0.00"

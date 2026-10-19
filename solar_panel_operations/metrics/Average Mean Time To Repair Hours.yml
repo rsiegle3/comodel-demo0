@@ -1,0 +1,8 @@
+unique_name: "Average Mean Time To Repair Hours"
+object_type: "metric"
+label: "Average Mean Time To Repair Hours"
+description: "Reported MTTR repair duration in hours per snapshot; differs from time between failures and ignores missing readings."
+dataset: "Solar Snapshots"
+column: "mttrh"
+calculation_method: "average"
+format: "#,##0.00"

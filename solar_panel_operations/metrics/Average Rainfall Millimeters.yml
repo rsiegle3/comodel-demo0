@@ -1,0 +1,8 @@
+unique_name: "Average Rainfall Millimeters"
+object_type: "metric"
+label: "Average Rainfall Millimeters"
+description: "Rainfall Millimeters recorded in the wind rain snow snapshot; missing observations are excluded."
+dataset: "Solar Snapshots"
+column: "rain_mm"
+calculation_method: "average"
+format: "#,##0.00"

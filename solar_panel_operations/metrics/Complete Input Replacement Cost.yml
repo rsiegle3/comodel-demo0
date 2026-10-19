@@ -1,0 +1,8 @@
+unique_name: "Complete Input Replacement Cost"
+object_type: "metric"
+label: "Complete Input Replacement Cost"
+description: "Complete Input Replacement Cost across snapshots with all cost inputs present; used for the component-based calculation and excludes incomplete inputs."
+dataset: "Solar Snapshots"
+column: "paired_replcost"
+calculation_method: "average"
+format: "#,##0.00"

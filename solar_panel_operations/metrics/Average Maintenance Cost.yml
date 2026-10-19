@@ -1,0 +1,8 @@
+unique_name: "Average Maintenance Cost"
+object_type: "metric"
+label: "Average Maintenance Cost"
+description: "Maintenance cost recorded per snapshot in unspecified source currency units; excludes cleaning and replacement costs."
+dataset: "Solar Snapshots"
+column: "maintcost"
+calculation_method: "average"
+format: "#,##0.00"

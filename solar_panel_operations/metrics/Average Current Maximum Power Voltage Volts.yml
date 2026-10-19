@@ -1,0 +1,8 @@
+unique_name: "Average Current Maximum Power Voltage Volts"
+object_type: "metric"
+label: "Average Current Maximum Power Voltage Volts"
+description: "Current Maximum Power Voltage Volts recorded in the iv curve snapshot; missing observations are excluded."
+dataset: "Solar Snapshots"
+column: "vmp_now_v"
+calculation_method: "average"
+format: "#,##0.00"

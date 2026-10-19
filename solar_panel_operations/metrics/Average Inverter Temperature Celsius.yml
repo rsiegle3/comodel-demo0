@@ -1,0 +1,8 @@
+unique_name: "Average Inverter Temperature Celsius"
+object_type: "metric"
+label: "Average Inverter Temperature Celsius"
+description: "Inverter Temperature Celsius recorded in the inverter snapshot; missing observations are excluded."
+dataset: "Solar Snapshots"
+column: "inverter_temp_c"
+calculation_method: "average"
+format: "#,##0.00"

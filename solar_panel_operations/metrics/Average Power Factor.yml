@@ -1,0 +1,8 @@
+unique_name: "Average Power Factor"
+object_type: "metric"
+label: "Average Power Factor"
+description: "Power Factor recorded in the inverter snapshot; missing observations are excluded. Source-reported ratio; no component formula is inferred."
+dataset: "Solar Snapshots"
+column: "power_factor"
+calculation_method: "average"
+format: "#,##0.00"

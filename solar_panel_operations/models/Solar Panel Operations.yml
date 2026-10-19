@@ -1,0 +1,261 @@
+unique_name: "Solar Panel Operations"
+object_type: "model"
+label: "Solar Panel Operations"
+description: "Solar plant operations at one row per plant snapshot, analyzed by plant, primary panel model, observation calendar and status; covers electrical output, efficiency, degradation, weather, mechanical condition, costs and alerts."
+dimensions:
+  - "Solar Snapshot"
+metrics:
+  -
+    unique_name: "Average Alert Events"
+    folder: "Alert Measures"
+  -
+    unique_name: "Average Revenue Loss"
+    folder: "Cost Measures"
+  -
+    unique_name: "Average Maintenance Cost"
+    folder: "Cost Measures"
+  -
+    unique_name: "Average Cleaning Cost"
+    folder: "Cost Measures"
+  -
+    unique_name: "Average Replacement Cost"
+    folder: "Cost Measures"
+  -
+    unique_name: "Average Mean Time Between Failures Hours"
+    folder: "Reliability Measures"
+  -
+    unique_name: "Average Mean Time To Repair Hours"
+    folder: "Reliability Measures"
+  -
+    unique_name: "Average Grid Voltage Volts"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Grid Frequency Hertz"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Power Quality Index"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Reactive Power VAR"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Harmonic Distortion Percent"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Current Power Watts"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Power Loss Watts"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Power Factor"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Inverter Temperature Celsius"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Inverter Efficiency Percent"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Current Maximum Power Current Amperes"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Current Short Circuit Current Amperes"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Current Maximum Power Voltage Volts"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Current Open Circuit Voltage Volts"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Initial Maximum Power Current Amperes"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Initial Short Circuit Current Amperes"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Shunt Resistance Ohms"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Initial Maximum Power Voltage Volts"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Initial Open Circuit Voltage Volts"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Series Resistance Ohms"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Current Fill Factor"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Initial Fill Factor"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Efficiency Loss Percent"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Soiling Loss Percent"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Instant Efficiency Percent"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Spectral Mismatch Percent"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Cumulative Degradation Percent"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Availability Percent"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Recorded Energy Yield kWh"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Reported Performance Ratio"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Capacity Factor Percent"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Specific Yield kWh Per kW"
+    folder: "Electrical Measures"
+  -
+    unique_name: "Average Diffuse Horizontal Irradiance Watts Per Square Meter"
+    folder: "Environmental Measures"
+  -
+    unique_name: "Average Direct Normal Irradiance Watts Per Square Meter"
+    folder: "Environmental Measures"
+  -
+    unique_name: "Average Global Horizontal Irradiance Watts Per Square Meter"
+    folder: "Environmental Measures"
+  -
+    unique_name: "Average Plane Of Array Irradiance Watts Per Square Meter"
+    folder: "Environmental Measures"
+  -
+    unique_name: "Average UV Index"
+    folder: "Environmental Measures"
+  -
+    unique_name: "Average Cloud Cover Percent"
+    folder: "Environmental Measures"
+  -
+    unique_name: "Average Air Pressure hPa"
+    folder: "Environmental Measures"
+  -
+    unique_name: "Average Dust Density Kilograms Per Cubic Meter"
+    folder: "Environmental Measures"
+  -
+    unique_name: "Average Relative Humidity Percent"
+    folder: "Environmental Measures"
+  -
+    unique_name: "Average Cell Temperature Celsius"
+    folder: "Environmental Measures"
+  -
+    unique_name: "Average Ambient Temperature Celsius"
+    folder: "Environmental Measures"
+  -
+    unique_name: "Average Rainfall Millimeters"
+    folder: "Environmental Measures"
+  -
+    unique_name: "Average Wind Direction Degrees"
+    folder: "Environmental Measures"
+  -
+    unique_name: "Average Snow Cover Percent"
+    folder: "Environmental Measures"
+  -
+    unique_name: "Average Wind Speed Meters Per Second"
+    folder: "Environmental Measures"
+  -
+    unique_name: "Average Tracker Angle Degrees"
+    folder: "Mechanical Measures"
+  -
+    unique_name: "Average Hotspot Count"
+    folder: "Mechanical Measures"
+  -
+    unique_name: "Average Microcrack Count"
+    folder: "Mechanical Measures"
+  -
+    unique_name: "Average Cleaning Cycle Days"
+    folder: "Mechanical Measures"
+  -
+    unique_name: "Electrical Snapshot Count"
+    folder: "Coverage Measures"
+  -
+    unique_name: "Environmental Snapshot Count"
+    folder: "Coverage Measures"
+  -
+    unique_name: "Mechanical Snapshot Count"
+    folder: "Coverage Measures"
+  -
+    unique_name: "Operational Snapshot Count"
+    folder: "Coverage Measures"
+  -
+    unique_name: "Alert Snapshot Count"
+    folder: "Coverage Measures"
+  -
+    unique_name: "Snapshot Count"
+    folder: "Coverage Measures"
+  -
+    unique_name: "Observed Plant Count"
+    folder: "Coverage Measures"
+  -
+    unique_name: "Power Complete Snapshot Count"
+    folder: "Coverage Measures"
+  -
+    unique_name: "Paired Current Power Watts"
+    folder: "Formula Components"
+  -
+    unique_name: "Paired Power Loss Watts"
+    folder: "Formula Components"
+  -
+    unique_name: "Cost Complete Snapshot Count"
+    folder: "Coverage Measures"
+  -
+    unique_name: "Complete Input Maintenance Cost"
+    folder: "Formula Components"
+  -
+    unique_name: "Complete Input Cleaning Cost"
+    folder: "Formula Components"
+  -
+    unique_name: "Complete Input Replacement Cost"
+    folder: "Formula Components"
+  -
+    unique_name: "Power Loss Share"
+    folder: "Calculations"
+  -
+    unique_name: "Average Combined Intervention Cost"
+    folder: "Calculations"
+relationships:
+  -
+    unique_name: "Snapshot To Plant"
+    from:
+      dataset: "Solar Snapshots"
+      join_columns:
+        - "sitetie"
+    to:
+      dimension: "Solar Plant"
+      level: "Solar Plant"
+  -
+    unique_name: "Snapshot To Calendar"
+    from:
+      dataset: "Solar Snapshots"
+      join_columns:
+        - "snapshot_date"
+    to:
+      dimension: "Solar Snapshot Calendar"
+      level: "Snapshot Date"
+ai_context:
+  -
+    source_type: "warehouse"
+    source: "bird_solar_panel / solar_panel.public"
+    instruction: "Authored solely from warehouse PK/FK metadata and ten-row samples in this clean session. No warehouse comments were present. Eight nonempty tables are used: plant_record, plants, panel_models, electrical_performance, environmental_conditions, mechanical_condition, operational_metrics and alert. Detail tables have snapshot PK/FK keys and are left joined one-to-one. Source timestamp timezone and observation interval are unspecified. No agent memory or reference semantic model was consulted."
+  -
+    source_type: "other"
+    source: "catalog.yml and PROMPT.md"
+    instruction: "Scope: general solar plant output, efficiency, degradation, cost and alerts. The model owns the solar_panel_operations directory. Percent readings retain source percentage points. Snapshot measurements use observation averages, not temporal sums. Formula components use matched non-null populations."
+  -
+    source_type: "warehouse"
+    source: "Deliberate exclusions and discovery limitations"
+    instruction: "inspection is excluded because it has no plant or snapshot FK or matching join key. plant_panel_model is a many-to-many membership bridge without panel counts or allocation weights; excluded to prevent duplicating observations. Primary model analysis uses plants.modhook only. Raw JSON is retained as dataset text but not exposed as a BI attribute; all nested paths observed in the samples are exposed. No empty tables or as_agg tables were found in public. Global statistics failed with a Redis timeout; no total row-count claims were inferred. Initial schema-qualified sample requests failed because the API also prefixes schema; retrying with separate schema and bare table succeeded."

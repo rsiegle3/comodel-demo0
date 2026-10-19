@@ -1,0 +1,8 @@
+unique_name: "Average Cell Temperature Celsius"
+object_type: "metric"
+label: "Average Cell Temperature Celsius"
+description: "Cell Temperature Celsius recorded in the temperatures snapshot; missing observations are excluded."
+dataset: "Solar Snapshots"
+column: "cell_temp_c"
+calculation_method: "average"
+format: "#,##0.00"

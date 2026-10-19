@@ -1,0 +1,8 @@
+unique_name: "Average Power Loss Watts"
+object_type: "metric"
+label: "Average Power Loss Watts"
+description: "Power Loss Watts recorded in the power snapshot; missing observations are excluded."
+dataset: "Solar Snapshots"
+column: "power_loss_w"
+calculation_method: "average"
+format: "#,##0.00"

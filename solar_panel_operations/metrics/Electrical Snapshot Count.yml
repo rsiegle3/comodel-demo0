@@ -1,0 +1,8 @@
+unique_name: "Electrical Snapshot Count"
+object_type: "metric"
+label: "Electrical Snapshot Count"
+description: "Electrical detail observations linked to plant snapshots; counts presence of the detail record, not completeness of its measurements."
+dataset: "Solar Snapshots"
+column: "snaplink"
+calculation_method: "count non-null"
+format: "#,##0.00"

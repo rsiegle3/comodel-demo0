@@ -1,0 +1,8 @@
+unique_name: "Environmental Snapshot Count"
+object_type: "metric"
+label: "Environmental Snapshot Count"
+description: "Environmental detail observations linked to plant snapshots; counts presence of the detail record, not completeness of its measurements."
+dataset: "Solar Snapshots"
+column: "snapref"
+calculation_method: "count non-null"
+format: "#,##0.00"

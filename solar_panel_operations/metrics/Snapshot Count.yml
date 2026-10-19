@@ -1,0 +1,8 @@
+unique_name: "Snapshot Count"
+object_type: "metric"
+label: "Snapshot Count"
+description: "Plant observation records, including snapshots missing one or more detail records; not a count of unique plants."
+dataset: "Solar Snapshots"
+column: "snapkey"
+calculation_method: "count distinct"
+format: "#,##0.00"

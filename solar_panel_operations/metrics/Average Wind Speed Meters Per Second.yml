@@ -1,0 +1,8 @@
+unique_name: "Average Wind Speed Meters Per Second"
+object_type: "metric"
+label: "Average Wind Speed Meters Per Second"
+description: "Wind Speed Meters Per Second recorded in the wind rain snow snapshot; missing observations are excluded."
+dataset: "Solar Snapshots"
+column: "wind_speed_m_s"
+calculation_method: "average"
+format: "#,##0.00"

@@ -1,0 +1,8 @@
+unique_name: "Average Ambient Temperature Celsius"
+object_type: "metric"
+label: "Average Ambient Temperature Celsius"
+description: "Ambient Temperature Celsius recorded in the temperatures snapshot; missing observations are excluded."
+dataset: "Solar Snapshots"
+column: "ambient_temp_c"
+calculation_method: "average"
+format: "#,##0.00"

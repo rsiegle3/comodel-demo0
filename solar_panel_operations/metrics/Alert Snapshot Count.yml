@@ -1,0 +1,8 @@
+unique_name: "Alert Snapshot Count"
+object_type: "metric"
+label: "Alert Snapshot Count"
+description: "Alert detail observations linked to plant snapshots; counts presence of the detail record, not completeness of its measurements."
+dataset: "Solar Snapshots"
+column: "snapalrt"
+calculation_method: "count non-null"
+format: "#,##0.00"

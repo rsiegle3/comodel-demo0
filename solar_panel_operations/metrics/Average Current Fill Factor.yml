@@ -1,0 +1,8 @@
+unique_name: "Average Current Fill Factor"
+object_type: "metric"
+label: "Average Current Fill Factor"
+description: "Current Fill Factor recorded in the iv curve snapshot; missing observations are excluded. Source-reported ratio; no component formula is inferred."
+dataset: "Solar Snapshots"
+column: "fill_factor_now"
+calculation_method: "average"
+format: "#,##0.00"

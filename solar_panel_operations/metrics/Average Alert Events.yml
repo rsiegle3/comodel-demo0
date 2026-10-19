@@ -1,0 +1,8 @@
+unique_name: "Average Alert Events"
+object_type: "metric"
+label: "Average Alert Events"
+description: "Alert events recorded per snapshot, parsed from text such as 6 events; repeated observations are not distinct incidents."
+dataset: "Solar Snapshots"
+column: "alert_events"
+calculation_method: "average"
+format: "#,##0.00"

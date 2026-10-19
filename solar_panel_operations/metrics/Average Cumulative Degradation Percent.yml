@@ -1,0 +1,8 @@
+unique_name: "Average Cumulative Degradation Percent"
+object_type: "metric"
+label: "Average Cumulative Degradation Percent"
+description: "Cumulative Degradation Percent recorded in the efficiency snapshot; missing observations are excluded. Values use percentage points, not fractions."
+dataset: "Solar Snapshots"
+column: "cumulative_deg_pct"
+calculation_method: "average"
+format: "#,##0.00"

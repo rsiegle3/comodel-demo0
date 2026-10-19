@@ -1,0 +1,8 @@
+unique_name: "Average Cleaning Cost"
+object_type: "metric"
+label: "Average Cleaning Cost"
+description: "Cleaning cost recorded per snapshot in unspecified source currency units; excludes maintenance and replacement costs."
+dataset: "Solar Snapshots"
+column: "cleancost"
+calculation_method: "average"
+format: "#,##0.00"

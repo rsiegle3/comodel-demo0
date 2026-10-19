@@ -1,0 +1,19 @@
+unique_name: "Solar Calendar"
+object_type: "dataset"
+label: "Solar Calendar"
+description: "Distinct observed calendar dates for plant snapshots; excludes dates without observations."
+connection_id: "Solar Postgres"
+sql: "SELECT DISTINCT snapts::date AS snapshot_date, EXTRACT(YEAR FROM snapts)::int AS snapshot_year, EXTRACT(QUARTER FROM snapts)::int AS snapshot_quarter, EXTRACT(MONTH FROM snapts)::int AS snapshot_month FROM public.plant_record WHERE snapts IS NOT NULL"
+columns:
+  -
+    name: "snapshot_date"
+    data_type: "date"
+  -
+    name: "snapshot_year"
+    data_type: "int"
+  -
+    name: "snapshot_quarter"
+    data_type: "int"
+  -
+    name: "snapshot_month"
+    data_type: "int"

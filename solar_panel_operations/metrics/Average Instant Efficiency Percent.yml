@@ -1,0 +1,8 @@
+unique_name: "Average Instant Efficiency Percent"
+object_type: "metric"
+label: "Average Instant Efficiency Percent"
+description: "Instant Efficiency Percent recorded in the efficiency snapshot; missing observations are excluded. Values use percentage points, not fractions."
+dataset: "Solar Snapshots"
+column: "instant_eff_pct"
+calculation_method: "average"
+format: "#,##0.00"

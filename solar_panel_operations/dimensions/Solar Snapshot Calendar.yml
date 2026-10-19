@@ -1,0 +1,61 @@
+unique_name: "Solar Snapshot Calendar"
+object_type: "dimension"
+label: "Solar Snapshot Calendar"
+description: "Gregorian observation calendar with year, quarter, month and day; not a commissioning calendar."
+type: "time"
+level_attributes:
+  -
+    unique_name: "Snapshot Year"
+    label: "Snapshot Year"
+    description: "Observation calendar year from the snapshot timestamp; distinct from plant commissioning and cleaning dates."
+    dataset: "Solar Calendar"
+    key_columns:
+      - "snapshot_year"
+    name_column: "snapshot_year"
+    time_unit: "year"
+  -
+    unique_name: "Snapshot Quarter"
+    label: "Snapshot Quarter"
+    description: "Observation calendar quarter from the snapshot timestamp; distinct from plant commissioning and cleaning dates."
+    dataset: "Solar Calendar"
+    key_columns:
+      - "snapshot_year"
+      - "snapshot_quarter"
+    name_column: "snapshot_quarter"
+    time_unit: "quarter"
+  -
+    unique_name: "Snapshot Month"
+    label: "Snapshot Month"
+    description: "Observation calendar month from the snapshot timestamp; distinct from plant commissioning and cleaning dates."
+    dataset: "Solar Calendar"
+    key_columns:
+      - "snapshot_year"
+      - "snapshot_quarter"
+      - "snapshot_month"
+    name_column: "snapshot_month"
+    time_unit: "month"
+  -
+    unique_name: "Snapshot Date"
+    label: "Snapshot Date"
+    description: "Observation calendar day from the snapshot timestamp; distinct from plant commissioning and cleaning dates."
+    dataset: "Solar Calendar"
+    key_columns:
+      - "snapshot_date"
+    name_column: "snapshot_date"
+    time_unit: "day"
+    is_unique_key: true
+hierarchies:
+  -
+    unique_name: "Snapshot Calendar Hierarchy"
+    label: "Snapshot Calendar Hierarchy"
+    filter_empty: "yes"
+    folder: "Snapshot Calendar"
+    levels:
+      -
+        unique_name: "Snapshot Year"
+      -
+        unique_name: "Snapshot Quarter"
+      -
+        unique_name: "Snapshot Month"
+      -
+        unique_name: "Snapshot Date"

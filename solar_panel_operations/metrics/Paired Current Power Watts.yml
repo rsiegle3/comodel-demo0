@@ -1,0 +1,8 @@
+unique_name: "Paired Current Power Watts"
+object_type: "metric"
+label: "Paired Current Power Watts"
+description: "Paired Current Power Watts across snapshots with all power inputs present; used for the component-based calculation and excludes incomplete inputs."
+dataset: "Solar Snapshots"
+column: "paired_power_now_w"
+calculation_method: "sum"
+format: "#,##0.00"

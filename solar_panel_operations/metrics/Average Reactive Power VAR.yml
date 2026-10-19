@@ -1,0 +1,8 @@
+unique_name: "Average Reactive Power VAR"
+object_type: "metric"
+label: "Average Reactive Power VAR"
+description: "Reactive Power VAR recorded in the grid snapshot; missing observations are excluded."
+dataset: "Solar Snapshots"
+column: "reactive_power_var"
+calculation_method: "average"
+format: "#,##0.00"

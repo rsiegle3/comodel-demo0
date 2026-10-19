@@ -1,0 +1,8 @@
+unique_name: "Average Mean Time Between Failures Hours"
+object_type: "metric"
+label: "Average Mean Time Between Failures Hours"
+description: "Reported MTBF reliability duration in hours per snapshot; differs from repair duration and ignores missing readings."
+dataset: "Solar Snapshots"
+column: "mtbfh"
+calculation_method: "average"
+format: "#,##0.00"

@@ -1,0 +1,8 @@
+unique_name: "Average Current Maximum Power Current Amperes"
+object_type: "metric"
+label: "Average Current Maximum Power Current Amperes"
+description: "Current Maximum Power Current Amperes recorded in the iv curve snapshot; missing observations are excluded."
+dataset: "Solar Snapshots"
+column: "imp_now_a"
+calculation_method: "average"
+format: "#,##0.00"

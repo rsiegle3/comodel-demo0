@@ -1,0 +1,8 @@
+unique_name: "Average Microcrack Count"
+object_type: "metric"
+label: "Average Microcrack Count"
+description: "Microcrack Count recorded in the module surface snapshot; missing observations are excluded."
+dataset: "Solar Snapshots"
+column: "microcrack_count"
+calculation_method: "average"
+format: "#,##0.00"
