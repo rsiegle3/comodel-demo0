@@ -1,6 +1,6 @@
-unique_name: __CATALOG_NAME__
+unique_name: comodel_demo
 object_type: catalog
-label: __CATALOG_LABEL__
+label: CoModel Demo
 description: "SML semantic models built by an LLM agent (Claude Code + the AtScale MCP) directly from a warehouse schema, with no pre-existing semantic model to copy. No model yet. The agent replaces this sentence with the subject area and the models once they exist."
 version: 1.7
 aggressive_agg_promotion: false
@@ -18,12 +18,12 @@ ai_context:
       root and covers every model directory beneath it. unique_name and label uniqueness is repo-wide
       and NOT per directory, so a new model's objects need names that do not collide with any other
       model's - prefix or qualify them (Snapshot Year, not Year). The model's unique_name must not
-      equal the catalog's unique_name (__CATALOG_NAME__).
+      equal the catalog's unique_name (comodel_demo).
   - source_type: warehouse
-    source: AtScale connection "__CONNECTION_ID__" (database __DATABASE__, schema __SCHEMA__)
+    source: AtScale connection "bird_solar_panel" (database solar_panel, schema public)
     instruction: >-
       The ONLY data source for this model. Declare one SML connection with as_connection:
-      __CONNECTION_ID__, database __DATABASE__, schema __SCHEMA__. Do not point the model at any other
+      bird_solar_panel, database solar_panel, schema public. Do not point the model at any other
       connection. Discover the tables, columns, keys, JSON fields and sample values yourself with the
       AtScale MCP explore_datasource tool (list tables, then column details and sample data) and any
       native column comments; no catalog, glossary or reference model is available, so every join and

@@ -1,11 +1,11 @@
-# __CATALOG_LABEL__
+# CoModel Demo
 
 SML semantic models built by an LLM agent (Claude Code or another agent plus the AtScale MCP) straight
 from a warehouse schema: point the agent at a database and have it build, validate, commit, push and
 deploy a semantic model you can query.
 
-Source: AtScale connection `__CONNECTION_ID__` (database `__DATABASE__`, schema `__SCHEMA__`).
-Catalog: `__CATALOG_NAME__`.
+Source: AtScale connection `bird_solar_panel` (database `solar_panel`, schema `public`).
+Catalog: `comodel_demo`.
 
 ## Using this template
 
