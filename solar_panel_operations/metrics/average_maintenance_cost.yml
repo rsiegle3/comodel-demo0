@@ -1,7 +1,0 @@
-unique_name: "Average Maintenance Cost"
-object_type: "metric"
-label: "Average Maintenance Cost"
-description: "Maintenance Cost per recorded observation; missing readings are excluded, not treated as zero. Source currency is unspecified; this is a snapshot amount, not an audited transaction total."
-dataset: "Solar Snapshots"
-column: "maintcost"
-calculation_method: "average"

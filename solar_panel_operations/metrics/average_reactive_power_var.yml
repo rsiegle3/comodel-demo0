@@ -1,7 +1,0 @@
-unique_name: "Average Reactive Power VAR"
-object_type: "metric"
-label: "Average Reactive Power VAR"
-description: "Reactive Power VAR per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
-dataset: "Solar Snapshots"
-column: "reactive_power_var"
-calculation_method: "average"

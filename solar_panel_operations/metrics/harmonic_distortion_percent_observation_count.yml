@@ -1,7 +1,0 @@
-unique_name: "Harmonic Distortion Percent Observation Count"
-object_type: "metric"
-label: "Harmonic Distortion Percent Observation Count"
-description: "Number of non-missing harmonic distortion percent snapshot readings; the matching Data Availability attribute identifies this population."
-dataset: "Solar Snapshots"
-column: "harmonic_distortion_pct"
-calculation_method: "count non-null"

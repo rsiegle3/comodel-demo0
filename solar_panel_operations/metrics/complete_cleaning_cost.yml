@@ -1,7 +1,0 @@
-unique_name: "Complete Cleaning Cost"
-object_type: "metric"
-label: "Complete Cleaning Cost"
-description: "Reported clean cost amounts over snapshots with all three cost components present; source currency and reporting interval are unspecified. Not a ledger total."
-dataset: "Solar Snapshots"
-column: "complete_cleancost"
-calculation_method: "sum"

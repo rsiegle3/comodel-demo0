@@ -1,7 +1,0 @@
-unique_name: "Replacement Cost Observation Count"
-object_type: "metric"
-label: "Replacement Cost Observation Count"
-description: "Number of non-missing replacement cost snapshot readings; the matching Data Availability attribute identifies this population."
-dataset: "Solar Snapshots"
-column: "replcost"
-calculation_method: "count non-null"

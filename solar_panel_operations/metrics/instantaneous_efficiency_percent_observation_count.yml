@@ -1,7 +1,0 @@
-unique_name: "Instantaneous Efficiency Percent Observation Count"
-object_type: "metric"
-label: "Instantaneous Efficiency Percent Observation Count"
-description: "Number of non-missing instantaneous efficiency percent snapshot readings; the matching Data Availability attribute identifies this population."
-dataset: "Solar Snapshots"
-column: "instant_eff_pct"
-calculation_method: "count non-null"

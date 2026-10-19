@@ -1,7 +1,0 @@
-unique_name: "Mean Time To Repair Hours Observation Count"
-object_type: "metric"
-label: "Mean Time To Repair Hours Observation Count"
-description: "Number of non-missing mean time to repair hours snapshot readings; the matching Data Availability attribute identifies this population."
-dataset: "Solar Snapshots"
-column: "mttrh"
-calculation_method: "count non-null"

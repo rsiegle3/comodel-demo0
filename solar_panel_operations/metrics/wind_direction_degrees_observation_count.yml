@@ -1,7 +1,0 @@
-unique_name: "Wind Direction Degrees Observation Count"
-object_type: "metric"
-label: "Wind Direction Degrees Observation Count"
-description: "Number of non-missing wind direction degrees snapshot readings; the matching Data Availability attribute identifies this population."
-dataset: "Solar Snapshots"
-column: "wind_dir_deg"
-calculation_method: "count non-null"

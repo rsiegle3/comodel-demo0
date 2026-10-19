@@ -1,7 +1,0 @@
-unique_name: "Snapshot Count"
-object_type: "metric"
-label: "Snapshot Count"
-description: "Number of recorded plant observations, not distinct plants."
-dataset: "Solar Snapshots"
-column: "snapkey"
-calculation_method: "count distinct"

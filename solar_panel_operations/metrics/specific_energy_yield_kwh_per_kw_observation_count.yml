@@ -1,7 +1,0 @@
-unique_name: "Specific Energy Yield KWh Per KW Observation Count"
-object_type: "metric"
-label: "Specific Energy Yield KWh Per KW Observation Count"
-description: "Number of non-missing specific energy yield kwh per kw snapshot readings; the matching Data Availability attribute identifies this population."
-dataset: "Solar Snapshots"
-column: "specific_yield_kwh_kw"
-calculation_method: "count non-null"

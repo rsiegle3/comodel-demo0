@@ -1,7 +1,0 @@
-unique_name: "Average Microcrack Count"
-object_type: "metric"
-label: "Average Microcrack Count"
-description: "Microcrack Count per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
-dataset: "Solar Snapshots"
-column: "microcrack_count"
-calculation_method: "average"

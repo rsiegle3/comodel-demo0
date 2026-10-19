@@ -1,7 +1,0 @@
-unique_name: "Grid Frequency Hz Observation Count"
-object_type: "metric"
-label: "Grid Frequency Hz Observation Count"
-description: "Number of non-missing grid frequency hz snapshot readings; the matching Data Availability attribute identifies this population."
-dataset: "Solar Snapshots"
-column: "grid_frequency_hz"
-calculation_method: "count non-null"

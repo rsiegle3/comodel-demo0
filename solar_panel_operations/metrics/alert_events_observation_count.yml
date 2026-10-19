@@ -1,7 +1,0 @@
-unique_name: "Alert Events Observation Count"
-object_type: "metric"
-label: "Alert Events Observation Count"
-description: "Number of non-missing alert events snapshot readings; the matching Data Availability attribute identifies this population."
-dataset: "Solar Snapshots"
-column: "alert_events"
-calculation_method: "count non-null"

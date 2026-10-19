@@ -1,7 +1,0 @@
-unique_name: "Average Power Factor"
-object_type: "metric"
-label: "Average Power Factor"
-description: "Power Factor per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
-dataset: "Solar Snapshots"
-column: "power_factor"
-calculation_method: "average"

@@ -1,7 +1,0 @@
-unique_name: "UV Index Observation Count"
-object_type: "metric"
-label: "UV Index Observation Count"
-description: "Number of non-missing uv index snapshot readings; the matching Data Availability attribute identifies this population."
-dataset: "Solar Snapshots"
-column: "uv_index"
-calculation_method: "count non-null"

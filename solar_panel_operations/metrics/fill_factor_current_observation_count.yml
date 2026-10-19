@@ -1,7 +1,0 @@
-unique_name: "Fill Factor Current Observation Count"
-object_type: "metric"
-label: "Fill Factor Current Observation Count"
-description: "Number of non-missing fill factor current snapshot readings; the matching Data Availability attribute identifies this population."
-dataset: "Solar Snapshots"
-column: "fill_factor_now"
-calculation_method: "count non-null"

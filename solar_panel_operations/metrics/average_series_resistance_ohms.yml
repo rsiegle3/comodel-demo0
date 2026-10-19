@@ -1,7 +1,0 @@
-unique_name: "Average Series Resistance Ohms"
-object_type: "metric"
-label: "Average Series Resistance Ohms"
-description: "Series Resistance Ohms per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
-dataset: "Solar Snapshots"
-column: "series_res_ohm"
-calculation_method: "average"

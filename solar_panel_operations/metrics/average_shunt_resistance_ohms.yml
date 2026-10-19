@@ -1,7 +1,0 @@
-unique_name: "Average Shunt Resistance Ohms"
-object_type: "metric"
-label: "Average Shunt Resistance Ohms"
-description: "Shunt Resistance Ohms per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
-dataset: "Solar Snapshots"
-column: "shunt_res_ohm"
-calculation_method: "average"

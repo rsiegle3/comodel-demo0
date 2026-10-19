@@ -1,7 +1,0 @@
-unique_name: "Complete Maintenance Cost"
-object_type: "metric"
-label: "Complete Maintenance Cost"
-description: "Reported maint cost amounts over snapshots with all three cost components present; source currency and reporting interval are unspecified. Not a ledger total."
-dataset: "Solar Snapshots"
-column: "complete_maintcost"
-calculation_method: "sum"

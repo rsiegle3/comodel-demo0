@@ -1,7 +1,0 @@
-unique_name: "Capacity Factor Percent Observation Count"
-object_type: "metric"
-label: "Capacity Factor Percent Observation Count"
-description: "Number of non-missing capacity factor percent snapshot readings; the matching Data Availability attribute identifies this population."
-dataset: "Solar Snapshots"
-column: "capacity_factor_pct"
-calculation_method: "count non-null"

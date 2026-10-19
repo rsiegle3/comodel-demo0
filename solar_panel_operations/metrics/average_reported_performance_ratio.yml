@@ -1,7 +1,0 @@
-unique_name: "Average Reported Performance Ratio"
-object_type: "metric"
-label: "Average Reported Performance Ratio"
-description: "Reported Performance Ratio per recorded observation; missing readings are excluded, not treated as zero. This averages the reported ratio, not a recomputed irradiance-normalized ratio."
-dataset: "Solar Snapshots"
-column: "performance_ratio"
-calculation_method: "average"

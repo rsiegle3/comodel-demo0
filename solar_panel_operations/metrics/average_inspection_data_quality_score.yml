@@ -1,7 +1,0 @@
-unique_name: "Average Inspection Data Quality Score"
-object_type: "metric"
-label: "Average Inspection Data Quality Score"
-description: "Recorded data quality score across inspection methods; not a plant-specific performance score."
-dataset: "Solar Inspections"
-column: "dqscore"
-calculation_method: "average"

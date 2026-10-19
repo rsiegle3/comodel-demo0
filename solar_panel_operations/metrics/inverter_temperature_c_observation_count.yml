@@ -1,7 +1,0 @@
-unique_name: "Inverter Temperature C Observation Count"
-object_type: "metric"
-label: "Inverter Temperature C Observation Count"
-description: "Number of non-missing inverter temperature c snapshot readings; the matching Data Availability attribute identifies this population."
-dataset: "Solar Snapshots"
-column: "inverter_temp_c"
-calculation_method: "count non-null"

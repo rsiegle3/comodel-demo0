@@ -1,7 +1,0 @@
-unique_name: "Average Current Power W"
-object_type: "metric"
-label: "Average Current Power W"
-description: "Current Power W per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
-dataset: "Solar Snapshots"
-column: "power_now_w"
-calculation_method: "average"

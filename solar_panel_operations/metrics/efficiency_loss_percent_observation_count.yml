@@ -1,7 +1,0 @@
-unique_name: "Efficiency Loss Percent Observation Count"
-object_type: "metric"
-label: "Efficiency Loss Percent Observation Count"
-description: "Number of non-missing efficiency loss percent snapshot readings; the matching Data Availability attribute identifies this population."
-dataset: "Solar Snapshots"
-column: "eff_loss_pct"
-calculation_method: "count non-null"

@@ -1,7 +1,0 @@
-unique_name: "Maintenance Cost Observation Count"
-object_type: "metric"
-label: "Maintenance Cost Observation Count"
-description: "Number of non-missing maintenance cost snapshot readings; the matching Data Availability attribute identifies this population."
-dataset: "Solar Snapshots"
-column: "maintcost"
-calculation_method: "count non-null"

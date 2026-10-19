@@ -1,7 +1,0 @@
-unique_name: "Fill Factor Initial Observation Count"
-object_type: "metric"
-label: "Fill Factor Initial Observation Count"
-description: "Number of non-missing fill factor initial snapshot readings; the matching Data Availability attribute identifies this population."
-dataset: "Solar Snapshots"
-column: "fill_factor_initial"
-calculation_method: "count non-null"

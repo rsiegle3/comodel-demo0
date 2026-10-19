@@ -1,7 +1,0 @@
-unique_name: "Average Short Circuit Current Initial A"
-object_type: "metric"
-label: "Average Short Circuit Current Initial A"
-description: "Short Circuit Current Initial A per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
-dataset: "Solar Snapshots"
-column: "isc_initial_a"
-calculation_method: "average"

@@ -1,7 +1,0 @@
-unique_name: "Average Cell Temperature C"
-object_type: "metric"
-label: "Average Cell Temperature C"
-description: "Cell Temperature C per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
-dataset: "Solar Snapshots"
-column: "cell_temp_c"
-calculation_method: "average"

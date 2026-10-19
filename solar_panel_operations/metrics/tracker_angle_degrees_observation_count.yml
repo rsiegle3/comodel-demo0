@@ -1,7 +1,0 @@
-unique_name: "Tracker Angle Degrees Observation Count"
-object_type: "metric"
-label: "Tracker Angle Degrees Observation Count"
-description: "Number of non-missing tracker angle degrees snapshot readings; the matching Data Availability attribute identifies this population."
-dataset: "Solar Snapshots"
-column: "tracker_angle_deg"
-calculation_method: "count non-null"

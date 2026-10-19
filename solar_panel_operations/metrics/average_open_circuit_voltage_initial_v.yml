@@ -1,7 +1,0 @@
-unique_name: "Average Open Circuit Voltage Initial V"
-object_type: "metric"
-label: "Average Open Circuit Voltage Initial V"
-description: "Open Circuit Voltage Initial V per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
-dataset: "Solar Snapshots"
-column: "voc_initial_v"
-calculation_method: "average"

@@ -1,7 +1,0 @@
-unique_name: "Current Power W Observation Count"
-object_type: "metric"
-label: "Current Power W Observation Count"
-description: "Number of non-missing current power w snapshot readings; the matching Data Availability attribute identifies this population."
-dataset: "Solar Snapshots"
-column: "power_now_w"
-calculation_method: "count non-null"

@@ -1,7 +1,0 @@
-unique_name: "Solar PostgreSQL"
-object_type: "connection"
-label: "Solar PostgreSQL"
-description: "Solar panel warehouse in PostgreSQL; public schema operational source."
-as_connection: "bird_solar_panel"
-database: "solar_panel"
-schema: "public"

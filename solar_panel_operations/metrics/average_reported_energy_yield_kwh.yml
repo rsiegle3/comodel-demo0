@@ -1,7 +1,0 @@
-unique_name: "Average Reported Energy Yield KWh"
-object_type: "metric"
-label: "Average Reported Energy Yield KWh"
-description: "Reported Energy Yield KWh per recorded observation; missing readings are excluded, not treated as zero. The source does not specify an interval or cumulative basis; this is mean reported kWh, not integrated energy production."
-dataset: "Solar Snapshots"
-column: "energy_yield_kwh"
-calculation_method: "average"

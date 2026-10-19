@@ -1,7 +1,0 @@
-unique_name: "Average Diffuse Horizontal Irradiance W Per M2"
-object_type: "metric"
-label: "Average Diffuse Horizontal Irradiance W Per M2"
-description: "Diffuse Horizontal Irradiance W Per M2 per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
-dataset: "Solar Snapshots"
-column: "dhi_w_m2"
-calculation_method: "average"

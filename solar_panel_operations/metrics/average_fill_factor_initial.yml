@@ -1,7 +1,0 @@
-unique_name: "Average Fill Factor Initial"
-object_type: "metric"
-label: "Average Fill Factor Initial"
-description: "Fill Factor Initial per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
-dataset: "Solar Snapshots"
-column: "fill_factor_initial"
-calculation_method: "average"

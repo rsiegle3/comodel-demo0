@@ -1,7 +1,0 @@
-unique_name: "Rain Mm Observation Count"
-object_type: "metric"
-label: "Rain Mm Observation Count"
-description: "Number of non-missing rain mm snapshot readings; the matching Data Availability attribute identifies this population."
-dataset: "Solar Snapshots"
-column: "rain_mm"
-calculation_method: "count non-null"

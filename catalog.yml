@@ -1,7 +1,7 @@
 unique_name: comodel_demo
 object_type: catalog
 label: CoModel Demo
-description: "Solar panel operations catalog containing Solar Panel Operations: plant observations, electrical and environmental readings, mechanical health, costs, alerts and independent inspections."
+description: "SML semantic models built by an LLM agent (Claude Code + the AtScale MCP) directly from a warehouse schema, with no pre-existing semantic model to copy. No model yet. The agent replaces this sentence with the subject area and the models once they exist."
 version: 1.7
 aggressive_agg_promotion: false
 build_speculative_aggs: false

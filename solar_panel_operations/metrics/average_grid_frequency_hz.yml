@@ -1,7 +1,0 @@
-unique_name: "Average Grid Frequency Hz"
-object_type: "metric"
-label: "Average Grid Frequency Hz"
-description: "Grid Frequency Hz per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
-dataset: "Solar Snapshots"
-column: "grid_frequency_hz"
-calculation_method: "average"

@@ -1,5 +1,0 @@
-unique_name: "Complete Reported Service Cost"
-object_type: "metric_calc"
-label: "Complete Reported Service Cost"
-description: "Sum of maintenance, cleaning and replacement amounts over complete-cost snapshots in the selected snapshot calendar slice. Source currency and interval are unspecified; this is a reported snapshot total, not accounting expenditure."
-expression: "[Measures].[Complete Maintenance Cost] + [Measures].[Complete Cleaning Cost] + [Measures].[Complete Replacement Cost]"

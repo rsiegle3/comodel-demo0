@@ -1,7 +1,0 @@
-unique_name: "Average Plane Of Array Irradiance W Per M2"
-object_type: "metric"
-label: "Average Plane Of Array Irradiance W Per M2"
-description: "Plane Of Array Irradiance W Per M2 per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
-dataset: "Solar Snapshots"
-column: "poa_irr_w_m2"
-calculation_method: "average"

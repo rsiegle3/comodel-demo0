@@ -1,7 +1,0 @@
-unique_name: "Complete Replacement Cost"
-object_type: "metric"
-label: "Complete Replacement Cost"
-description: "Reported repl cost amounts over snapshots with all three cost components present; source currency and reporting interval are unspecified. Not a ledger total."
-dataset: "Solar Snapshots"
-column: "complete_replcost"
-calculation_method: "sum"

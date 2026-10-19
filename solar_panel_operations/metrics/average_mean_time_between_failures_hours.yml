@@ -1,7 +1,0 @@
-unique_name: "Average Mean Time Between Failures Hours"
-object_type: "metric"
-label: "Average Mean Time Between Failures Hours"
-description: "Mean Time Between Failures Hours per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
-dataset: "Solar Snapshots"
-column: "mtbfh"
-calculation_method: "average"
