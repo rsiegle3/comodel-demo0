@@ -1,0 +1,7 @@
+unique_name: "Series Resistance Ohms Observation Count"
+object_type: "metric"
+label: "Series Resistance Ohms Observation Count"
+description: "Number of non-missing series resistance ohms snapshot readings; the matching Data Availability attribute identifies this population."
+dataset: "Solar Snapshots"
+column: "series_res_ohm"
+calculation_method: "count non-null"

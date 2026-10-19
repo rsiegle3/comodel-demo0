@@ -1,0 +1,7 @@
+unique_name: "Average Maximum Power Current Initial A"
+object_type: "metric"
+label: "Average Maximum Power Current Initial A"
+description: "Maximum Power Current Initial A per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
+dataset: "Solar Snapshots"
+column: "imp_initial_a"
+calculation_method: "average"

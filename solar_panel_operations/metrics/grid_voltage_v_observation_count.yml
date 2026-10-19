@@ -1,0 +1,7 @@
+unique_name: "Grid Voltage V Observation Count"
+object_type: "metric"
+label: "Grid Voltage V Observation Count"
+description: "Number of non-missing grid voltage v snapshot readings; the matching Data Availability attribute identifies this population."
+dataset: "Solar Snapshots"
+column: "grid_voltage_v"
+calculation_method: "count non-null"

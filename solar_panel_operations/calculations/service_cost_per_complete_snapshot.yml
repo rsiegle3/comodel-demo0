@@ -1,0 +1,5 @@
+unique_name: "Service Cost Per Complete Snapshot"
+object_type: "metric_calc"
+label: "Service Cost Per Complete Snapshot"
+description: "Complete reported service cost divided by the count of snapshots with all three cost inputs, within the selected snapshot calendar slice. Returns currency units per observation and null with no complete snapshots; distinct from the reported total."
+expression: "IIF([Measures].[Complete Cost Snapshot Count] = 0, NULL, [Measures].[Complete Reported Service Cost] / [Measures].[Complete Cost Snapshot Count])"

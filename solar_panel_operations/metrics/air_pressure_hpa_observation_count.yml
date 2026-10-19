@@ -1,0 +1,7 @@
+unique_name: "Air Pressure HPa Observation Count"
+object_type: "metric"
+label: "Air Pressure HPa Observation Count"
+description: "Number of non-missing air pressure hpa snapshot readings; the matching Data Availability attribute identifies this population."
+dataset: "Solar Snapshots"
+column: "air_pressure_hpa"
+calculation_method: "count non-null"

@@ -1,0 +1,7 @@
+unique_name: "Average Efficiency Loss Percent"
+object_type: "metric"
+label: "Average Efficiency Loss Percent"
+description: "Efficiency Loss Percent per recorded observation; missing readings are excluded, not treated as zero. Stored percentage points are averaged; this is not a ratio recomputed from physical components."
+dataset: "Solar Snapshots"
+column: "eff_loss_pct"
+calculation_method: "average"

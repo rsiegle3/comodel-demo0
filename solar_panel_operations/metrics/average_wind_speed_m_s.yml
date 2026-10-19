@@ -1,0 +1,7 @@
+unique_name: "Average Wind Speed M S"
+object_type: "metric"
+label: "Average Wind Speed M S"
+description: "Wind Speed M S per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
+dataset: "Solar Snapshots"
+column: "wind_speed_m_s"
+calculation_method: "average"

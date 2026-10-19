@@ -1,0 +1,7 @@
+unique_name: "Cumulative Degradation Percent Observation Count"
+object_type: "metric"
+label: "Cumulative Degradation Percent Observation Count"
+description: "Number of non-missing cumulative degradation percent snapshot readings; the matching Data Availability attribute identifies this population."
+dataset: "Solar Snapshots"
+column: "cumulative_deg_pct"
+calculation_method: "count non-null"

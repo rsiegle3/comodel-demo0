@@ -1,0 +1,7 @@
+unique_name: "Average Dust Density Kg M3"
+object_type: "metric"
+label: "Average Dust Density Kg M3"
+description: "Dust Density Kg M3 per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
+dataset: "Solar Snapshots"
+column: "dust_density_kg_m3"
+calculation_method: "average"

@@ -1,0 +1,7 @@
+unique_name: "Average Specific Energy Yield KWh Per KW"
+object_type: "metric"
+label: "Average Specific Energy Yield KWh Per KW"
+description: "Specific Energy Yield KWh Per KW per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
+dataset: "Solar Snapshots"
+column: "specific_yield_kwh_kw"
+calculation_method: "average"

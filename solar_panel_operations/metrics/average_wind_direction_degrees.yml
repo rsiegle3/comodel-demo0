@@ -1,0 +1,7 @@
+unique_name: "Average Wind Direction Degrees"
+object_type: "metric"
+label: "Average Wind Direction Degrees"
+description: "Wind Direction Degrees per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
+dataset: "Solar Snapshots"
+column: "wind_dir_deg"
+calculation_method: "average"

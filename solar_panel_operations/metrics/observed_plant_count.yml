@@ -1,0 +1,7 @@
+unique_name: "Observed Plant Count"
+object_type: "metric"
+label: "Observed Plant Count"
+description: "Distinct plants represented in the selected snapshots; excludes plants with no selected observation."
+dataset: "Solar Snapshots"
+column: "sitetie"
+calculation_method: "count distinct"

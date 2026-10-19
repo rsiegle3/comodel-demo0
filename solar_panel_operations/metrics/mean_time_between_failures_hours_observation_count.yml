@@ -1,0 +1,7 @@
+unique_name: "Mean Time Between Failures Hours Observation Count"
+object_type: "metric"
+label: "Mean Time Between Failures Hours Observation Count"
+description: "Number of non-missing mean time between failures hours snapshot readings; the matching Data Availability attribute identifies this population."
+dataset: "Solar Snapshots"
+column: "mtbfh"
+calculation_method: "count non-null"

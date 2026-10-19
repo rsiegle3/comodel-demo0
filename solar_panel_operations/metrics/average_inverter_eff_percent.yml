@@ -1,0 +1,7 @@
+unique_name: "Average Inverter Eff Percent"
+object_type: "metric"
+label: "Average Inverter Eff Percent"
+description: "Inverter Eff Percent per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
+dataset: "Solar Snapshots"
+column: "inverter_eff_pct"
+calculation_method: "average"

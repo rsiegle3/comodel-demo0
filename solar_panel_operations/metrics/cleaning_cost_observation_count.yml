@@ -1,0 +1,7 @@
+unique_name: "Cleaning Cost Observation Count"
+object_type: "metric"
+label: "Cleaning Cost Observation Count"
+description: "Number of non-missing cleaning cost snapshot readings; the matching Data Availability attribute identifies this population."
+dataset: "Solar Snapshots"
+column: "cleancost"
+calculation_method: "count non-null"

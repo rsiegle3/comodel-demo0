@@ -1,0 +1,7 @@
+unique_name: "Average Ambient Temperature C"
+object_type: "metric"
+label: "Average Ambient Temperature C"
+description: "Ambient Temperature C per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
+dataset: "Solar Snapshots"
+column: "ambient_temp_c"
+calculation_method: "average"

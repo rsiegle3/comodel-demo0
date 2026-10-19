@@ -1,0 +1,7 @@
+unique_name: "Spectral Mismatch Percent Observation Count"
+object_type: "metric"
+label: "Spectral Mismatch Percent Observation Count"
+description: "Number of non-missing spectral mismatch percent snapshot readings; the matching Data Availability attribute identifies this population."
+dataset: "Solar Snapshots"
+column: "spectral_mismatch"
+calculation_method: "count non-null"

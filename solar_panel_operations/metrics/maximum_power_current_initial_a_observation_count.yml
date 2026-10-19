@@ -1,0 +1,7 @@
+unique_name: "Maximum Power Current Initial A Observation Count"
+object_type: "metric"
+label: "Maximum Power Current Initial A Observation Count"
+description: "Number of non-missing maximum power current initial a snapshot readings; the matching Data Availability attribute identifies this population."
+dataset: "Solar Snapshots"
+column: "imp_initial_a"
+calculation_method: "count non-null"

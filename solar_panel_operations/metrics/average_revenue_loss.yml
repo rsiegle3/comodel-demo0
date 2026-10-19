@@ -1,0 +1,7 @@
+unique_name: "Average Revenue Loss"
+object_type: "metric"
+label: "Average Revenue Loss"
+description: "Revenue Loss per recorded observation; missing readings are excluded, not treated as zero. Parsed from dollar-prefixed source text; currency code is unspecified."
+dataset: "Solar Snapshots"
+column: "revenue_loss"
+calculation_method: "average"

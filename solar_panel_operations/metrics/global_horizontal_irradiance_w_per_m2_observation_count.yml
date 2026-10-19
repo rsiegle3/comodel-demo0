@@ -1,0 +1,7 @@
+unique_name: "Global Horizontal Irradiance W Per M2 Observation Count"
+object_type: "metric"
+label: "Global Horizontal Irradiance W Per M2 Observation Count"
+description: "Number of non-missing global horizontal irradiance w per m2 snapshot readings; the matching Data Availability attribute identifies this population."
+dataset: "Solar Snapshots"
+column: "ghi_w_m2"
+calculation_method: "count non-null"

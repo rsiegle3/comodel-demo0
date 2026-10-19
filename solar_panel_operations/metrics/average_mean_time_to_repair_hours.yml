@@ -1,0 +1,7 @@
+unique_name: "Average Mean Time To Repair Hours"
+object_type: "metric"
+label: "Average Mean Time To Repair Hours"
+description: "Mean Time To Repair Hours per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
+dataset: "Solar Snapshots"
+column: "mttrh"
+calculation_method: "average"

@@ -1,0 +1,62 @@
+unique_name: "Snapshot Calendar"
+object_type: "dimension"
+label: "Snapshot Calendar"
+description: "Snapshot date calendar for year, quarter, month and day analysis."
+type: "time"
+level_attributes:
+  -
+    unique_name: "Snapshot Year"
+    label: "Snapshot Year"
+    description: "Snapshot year in the Gregorian calendar; based on plant observation time, not inspection time."
+    dataset: "Solar Calendar Dates"
+    key_columns:
+      - "calendar_year"
+    name_column: "calendar_year"
+    time_unit: "year"
+  -
+    unique_name: "Snapshot Quarter"
+    label: "Snapshot Quarter"
+    description: "Snapshot quarter in the Gregorian calendar; based on plant observation time, not inspection time."
+    dataset: "Solar Calendar Dates"
+    key_columns:
+      - "calendar_year"
+      - "calendar_quarter"
+    name_column: "calendar_quarter"
+    time_unit: "quarter"
+  -
+    unique_name: "Snapshot Month"
+    label: "Snapshot Month"
+    description: "Snapshot month in the Gregorian calendar; based on plant observation time, not inspection time."
+    dataset: "Solar Calendar Dates"
+    key_columns:
+      - "calendar_year"
+      - "calendar_quarter"
+      - "calendar_month"
+    name_column: "calendar_month"
+    time_unit: "month"
+  -
+    unique_name: "Snapshot Date"
+    label: "Snapshot Date"
+    description: "Snapshot day in the Gregorian calendar; based on plant observation time, not inspection time."
+    dataset: "Solar Calendar Dates"
+    key_columns:
+      - "calendar_date"
+    name_column: "calendar_date"
+    time_unit: "day"
+    is_unique_key: true
+hierarchies:
+  -
+    unique_name: "Snapshot Calendar Hierarchy"
+    label: "Snapshot Calendar Hierarchy"
+    description: "Snapshot Gregorian year to day drill path."
+    filter_empty: "yes"
+    folder: "Snapshot Calendar"
+    levels:
+      -
+        unique_name: "Snapshot Year"
+      -
+        unique_name: "Snapshot Quarter"
+      -
+        unique_name: "Snapshot Month"
+      -
+        unique_name: "Snapshot Date"

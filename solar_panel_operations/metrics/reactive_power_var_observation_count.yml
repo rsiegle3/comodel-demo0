@@ -1,0 +1,7 @@
+unique_name: "Reactive Power VAR Observation Count"
+object_type: "metric"
+label: "Reactive Power VAR Observation Count"
+description: "Number of non-missing reactive power var snapshot readings; the matching Data Availability attribute identifies this population."
+dataset: "Solar Snapshots"
+column: "reactive_power_var"
+calculation_method: "count non-null"

@@ -1,0 +1,7 @@
+unique_name: "Cloud Cover Percent Observation Count"
+object_type: "metric"
+label: "Cloud Cover Percent Observation Count"
+description: "Number of non-missing cloud cover percent snapshot readings; the matching Data Availability attribute identifies this population."
+dataset: "Solar Snapshots"
+column: "cloud_cover_pct"
+calculation_method: "count non-null"

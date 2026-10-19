@@ -1,0 +1,7 @@
+unique_name: "Average Cloud Cover Percent"
+object_type: "metric"
+label: "Average Cloud Cover Percent"
+description: "Cloud Cover Percent per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
+dataset: "Solar Snapshots"
+column: "cloud_cover_pct"
+calculation_method: "average"

@@ -1,0 +1,7 @@
+unique_name: "Average Power Quality Index"
+object_type: "metric"
+label: "Average Power Quality Index"
+description: "Power Quality Index per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
+dataset: "Solar Snapshots"
+column: "power_quality_idx"
+calculation_method: "average"

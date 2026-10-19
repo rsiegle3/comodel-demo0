@@ -1,0 +1,7 @@
+unique_name: "Average Availability Percent"
+object_type: "metric"
+label: "Average Availability Percent"
+description: "Availability Percent per recorded observation; missing readings are excluded, not treated as zero. Stored percentage points are averaged; this is not a ratio recomputed from physical components."
+dataset: "Solar Snapshots"
+column: "availability_pct"
+calculation_method: "average"

@@ -1,0 +1,7 @@
+unique_name: "Wind Speed M S Observation Count"
+object_type: "metric"
+label: "Wind Speed M S Observation Count"
+description: "Number of non-missing wind speed m s snapshot readings; the matching Data Availability attribute identifies this population."
+dataset: "Solar Snapshots"
+column: "wind_speed_m_s"
+calculation_method: "count non-null"

@@ -1,0 +1,7 @@
+unique_name: "Inverter Eff Percent Observation Count"
+object_type: "metric"
+label: "Inverter Eff Percent Observation Count"
+description: "Number of non-missing inverter eff percent snapshot readings; the matching Data Availability attribute identifies this population."
+dataset: "Solar Snapshots"
+column: "inverter_eff_pct"
+calculation_method: "count non-null"

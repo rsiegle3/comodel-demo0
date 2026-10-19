@@ -1,0 +1,7 @@
+unique_name: "Complete Cost Snapshot Count"
+object_type: "metric"
+label: "Complete Cost Snapshot Count"
+description: "Number of snapshots with maintenance, cleaning and replacement costs all present; support set for complete-cost calculations."
+dataset: "Solar Snapshots"
+column: "complete_cost_count"
+calculation_method: "sum"

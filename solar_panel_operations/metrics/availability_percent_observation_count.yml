@@ -1,0 +1,7 @@
+unique_name: "Availability Percent Observation Count"
+object_type: "metric"
+label: "Availability Percent Observation Count"
+description: "Number of non-missing availability percent snapshot readings; the matching Data Availability attribute identifies this population."
+dataset: "Solar Snapshots"
+column: "availability_pct"
+calculation_method: "count non-null"

@@ -1,0 +1,7 @@
+unique_name: "Average Hotspot Count"
+object_type: "metric"
+label: "Average Hotspot Count"
+description: "Hotspot Count per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
+dataset: "Solar Snapshots"
+column: "hotspot_count"
+calculation_method: "average"

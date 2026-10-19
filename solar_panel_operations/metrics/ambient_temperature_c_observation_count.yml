@@ -1,0 +1,7 @@
+unique_name: "Ambient Temperature C Observation Count"
+object_type: "metric"
+label: "Ambient Temperature C Observation Count"
+description: "Number of non-missing ambient temperature c snapshot readings; the matching Data Availability attribute identifies this population."
+dataset: "Solar Snapshots"
+column: "ambient_temp_c"
+calculation_method: "count non-null"

@@ -1,0 +1,7 @@
+unique_name: "Microcrack Count Observation Count"
+object_type: "metric"
+label: "Microcrack Count Observation Count"
+description: "Number of non-missing microcrack count snapshot readings; the matching Data Availability attribute identifies this population."
+dataset: "Solar Snapshots"
+column: "microcrack_count"
+calculation_method: "count non-null"

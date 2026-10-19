@@ -1,0 +1,7 @@
+unique_name: "Average Open Circuit Voltage Current V"
+object_type: "metric"
+label: "Average Open Circuit Voltage Current V"
+description: "Open Circuit Voltage Current V per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
+dataset: "Solar Snapshots"
+column: "voc_now_v"
+calculation_method: "average"

@@ -1,0 +1,666 @@
+unique_name: "Solar Snapshot"
+object_type: "dimension"
+label: "Solar Snapshot"
+description: "Individual plant observation business code such as PV937101; carries recorded alert and mechanical conditions."
+type: "standard"
+level_attributes:
+  -
+    unique_name: "Solar Snapshot"
+    label: "Solar Snapshot"
+    description: "Individual plant observation business code such as PV937101; carries recorded alert and mechanical conditions."
+    dataset: "Solar Snapshots"
+    key_columns:
+      - "snapkey"
+    name_column: "snapkey"
+hierarchies:
+  -
+    unique_name: "Solar Snapshot Hierarchy"
+    label: "Solar Snapshot Hierarchy"
+    description: "Individual plant observation business code such as PV937101; carries recorded alert and mechanical conditions."
+    filter_empty: "yes"
+    folder: "Solar Snapshot"
+    levels:
+      -
+        unique_name: "Solar Snapshot"
+        secondary_attributes:
+          -
+            unique_name: "Snapshot Timestamp"
+            label: "Snapshot Timestamp"
+            description: "Recorded plant observation timestamp, such as 2018-08-03 12:21:20; not commissioning or inspection time."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "snapts"
+            name_column: "snapts"
+          -
+            unique_name: "Alert State"
+            label: "Alert State"
+            description: "Snapshot alert state; sampled values include Warning and Critical, with missing values retained."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "alrtstate"
+            name_column: "alrtstate"
+          -
+            unique_name: "Maintenance Priority"
+            label: "Maintenance Priority"
+            description: "Snapshot maintenance urgency High, Medium or Low; distinct from replacement priority."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "maintprio"
+            name_column: "maintprio"
+          -
+            unique_name: "Replacement Priority"
+            label: "Replacement Priority"
+            description: "Snapshot replacement urgency High, Medium or Low; distinct from maintenance priority."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "replprio"
+            name_column: "replprio"
+          -
+            unique_name: "Optimization Potential"
+            label: "Optimization Potential"
+            description: "Snapshot optimization opportunity High, Medium or Low; distinct from alert severity."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "optpot"
+            name_column: "optpot"
+          -
+            unique_name: "Cost Data Coverage"
+            label: "Cost Data Coverage"
+            description: "Complete when maintenance, cleaning and replacement costs are all present; otherwise Incomplete. Filters the complete-cost calculation population."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "cost_coverage"
+            name_column: "cost_coverage"
+          -
+            unique_name: "Tracker State"
+            label: "Tracker State"
+            description: "Snapshot tracker state from mechanical tracker; distinct from plant specification attributes. Example: Maintenance."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "tracker_state"
+            name_column: "tracker_state"
+          -
+            unique_name: "Light Induced Degradation Status"
+            label: "Light Induced Degradation Status"
+            description: "Snapshot light induced degradation status from mechanical module surface; distinct from plant specification attributes. Example: Unknown."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "lid_status"
+            name_column: "lid_status"
+          -
+            unique_name: "Potential Induced Degradation Severity"
+            label: "Potential Induced Degradation Severity"
+            description: "Snapshot potential induced degradation severity from mechanical module surface; distinct from plant specification attributes. Missing source values remain null."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "pid_severity"
+            name_column: "pid_severity"
+          -
+            unique_name: "Glass Condition"
+            label: "Glass Condition"
+            description: "Snapshot glass condition from mechanical module surface; distinct from plant specification attributes. Example: Clear."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "glass_condition"
+            name_column: "glass_condition"
+          -
+            unique_name: "Busbar Corrosion"
+            label: "Busbar Corrosion"
+            description: "Snapshot busbar corrosion from mechanical module surface; distinct from plant specification attributes. Example: Severe."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "busbar_corrosion"
+            name_column: "busbar_corrosion"
+          -
+            unique_name: "Backsheet Condition"
+            label: "Backsheet Condition"
+            description: "Snapshot backsheet condition from mechanical module surface; distinct from plant specification attributes. Example: Poor."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "backsheet_condition"
+            name_column: "backsheet_condition"
+          -
+            unique_name: "Delamination Status"
+            label: "Delamination Status"
+            description: "Snapshot delamination status from mechanical module surface; distinct from plant specification attributes. Example: Minor."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "delamination_status"
+            name_column: "delamination_status"
+          -
+            unique_name: "Snail Trail Severity"
+            label: "Snail Trail Severity"
+            description: "Snapshot snail trail severity from mechanical module surface; distinct from plant specification attributes. Example: Light."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "snail_trail_severity"
+            name_column: "snail_trail_severity"
+          -
+            unique_name: "Encapsulant Yellowing"
+            label: "Encapsulant Yellowing"
+            description: "Snapshot encapsulant yellowing from mechanical module surface; distinct from plant specification attributes. Example: Severe."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "encapsulant_yellowing"
+            name_column: "encapsulant_yellowing"
+          -
+            unique_name: "Last Clean Date"
+            label: "Last Clean Date"
+            description: "Snapshot last clean date from mechanical mount cleaning; distinct from plant specification attributes. Example: 2025-01-14."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "last_clean_date"
+            name_column: "last_clean_date"
+          -
+            unique_name: "Mount Structure Status"
+            label: "Mount Structure Status"
+            description: "Snapshot mount structure status from mechanical mount cleaning; distinct from plant specification attributes. Example: Stable."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "mount_structure_status"
+            name_column: "mount_structure_status"
+          -
+            unique_name: "Cable Condition"
+            label: "Cable Condition"
+            description: "Snapshot cable condition from mechanical electrical integrity; distinct from plant specification attributes. Example: Good."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "cable_condition"
+            name_column: "cable_condition"
+          -
+            unique_name: "Grounding Status"
+            label: "Grounding Status"
+            description: "Snapshot grounding status from mechanical electrical integrity; distinct from plant specification attributes. Example: Normal."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "grounding_status"
+            name_column: "grounding_status"
+          -
+            unique_name: "Bypass Diode Status"
+            label: "Bypass Diode Status"
+            description: "Snapshot bypass diode status from mechanical electrical integrity; distinct from plant specification attributes. Example: Partial."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "bypass_diode_status"
+            name_column: "bypass_diode_status"
+          -
+            unique_name: "Connector Condition"
+            label: "Connector Condition"
+            description: "Snapshot connector condition from mechanical electrical integrity; distinct from plant specification attributes. Example: Fair."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "connector_condition"
+            name_column: "connector_condition"
+          -
+            unique_name: "Junction Box Condition"
+            label: "Junction Box Condition"
+            description: "Snapshot junction box condition from mechanical electrical integrity; distinct from plant specification attributes. Example: Good."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "junction_box_condition"
+            name_column: "junction_box_condition"
+          -
+            unique_name: "Grid Voltage V Data Availability"
+            label: "Grid Voltage V Data Availability"
+            description: "Available or Missing for the snapshot grid voltage v reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "grid_voltage_v_availability"
+            name_column: "grid_voltage_v_availability"
+          -
+            unique_name: "Grid Frequency Hz Data Availability"
+            label: "Grid Frequency Hz Data Availability"
+            description: "Available or Missing for the snapshot grid frequency hz reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "grid_frequency_hz_availability"
+            name_column: "grid_frequency_hz_availability"
+          -
+            unique_name: "Power Quality Index Data Availability"
+            label: "Power Quality Index Data Availability"
+            description: "Available or Missing for the snapshot power quality index reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "power_quality_idx_availability"
+            name_column: "power_quality_idx_availability"
+          -
+            unique_name: "Reactive Power VAR Data Availability"
+            label: "Reactive Power VAR Data Availability"
+            description: "Available or Missing for the snapshot reactive power var reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "reactive_power_var_availability"
+            name_column: "reactive_power_var_availability"
+          -
+            unique_name: "Harmonic Distortion Percent Data Availability"
+            label: "Harmonic Distortion Percent Data Availability"
+            description: "Available or Missing for the snapshot harmonic distortion percent reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "harmonic_distortion_pct_availability"
+            name_column: "harmonic_distortion_pct_availability"
+          -
+            unique_name: "Current Power W Data Availability"
+            label: "Current Power W Data Availability"
+            description: "Available or Missing for the snapshot current power w reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "power_now_w_availability"
+            name_column: "power_now_w_availability"
+          -
+            unique_name: "Power Loss W Data Availability"
+            label: "Power Loss W Data Availability"
+            description: "Available or Missing for the snapshot power loss w reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "power_loss_w_availability"
+            name_column: "power_loss_w_availability"
+          -
+            unique_name: "Power Factor Data Availability"
+            label: "Power Factor Data Availability"
+            description: "Available or Missing for the snapshot power factor reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "power_factor_availability"
+            name_column: "power_factor_availability"
+          -
+            unique_name: "Inverter Temperature C Data Availability"
+            label: "Inverter Temperature C Data Availability"
+            description: "Available or Missing for the snapshot inverter temperature c reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "inverter_temp_c_availability"
+            name_column: "inverter_temp_c_availability"
+          -
+            unique_name: "Inverter Eff Percent Data Availability"
+            label: "Inverter Eff Percent Data Availability"
+            description: "Available or Missing for the snapshot inverter eff percent reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "inverter_eff_pct_availability"
+            name_column: "inverter_eff_pct_availability"
+          -
+            unique_name: "Maximum Power Current Current A Data Availability"
+            label: "Maximum Power Current Current A Data Availability"
+            description: "Available or Missing for the snapshot maximum power current current a reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "imp_now_a_availability"
+            name_column: "imp_now_a_availability"
+          -
+            unique_name: "Short Circuit Current Current A Data Availability"
+            label: "Short Circuit Current Current A Data Availability"
+            description: "Available or Missing for the snapshot short circuit current current a reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "isc_now_a_availability"
+            name_column: "isc_now_a_availability"
+          -
+            unique_name: "Maximum Power Voltage Current V Data Availability"
+            label: "Maximum Power Voltage Current V Data Availability"
+            description: "Available or Missing for the snapshot maximum power voltage current v reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "vmp_now_v_availability"
+            name_column: "vmp_now_v_availability"
+          -
+            unique_name: "Open Circuit Voltage Current V Data Availability"
+            label: "Open Circuit Voltage Current V Data Availability"
+            description: "Available or Missing for the snapshot open circuit voltage current v reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "voc_now_v_availability"
+            name_column: "voc_now_v_availability"
+          -
+            unique_name: "Maximum Power Current Initial A Data Availability"
+            label: "Maximum Power Current Initial A Data Availability"
+            description: "Available or Missing for the snapshot maximum power current initial a reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "imp_initial_a_availability"
+            name_column: "imp_initial_a_availability"
+          -
+            unique_name: "Short Circuit Current Initial A Data Availability"
+            label: "Short Circuit Current Initial A Data Availability"
+            description: "Available or Missing for the snapshot short circuit current initial a reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "isc_initial_a_availability"
+            name_column: "isc_initial_a_availability"
+          -
+            unique_name: "Shunt Resistance Ohms Data Availability"
+            label: "Shunt Resistance Ohms Data Availability"
+            description: "Available or Missing for the snapshot shunt resistance ohms reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "shunt_res_ohm_availability"
+            name_column: "shunt_res_ohm_availability"
+          -
+            unique_name: "Maximum Power Voltage Initial V Data Availability"
+            label: "Maximum Power Voltage Initial V Data Availability"
+            description: "Available or Missing for the snapshot maximum power voltage initial v reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "vmp_initial_v_availability"
+            name_column: "vmp_initial_v_availability"
+          -
+            unique_name: "Open Circuit Voltage Initial V Data Availability"
+            label: "Open Circuit Voltage Initial V Data Availability"
+            description: "Available or Missing for the snapshot open circuit voltage initial v reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "voc_initial_v_availability"
+            name_column: "voc_initial_v_availability"
+          -
+            unique_name: "Series Resistance Ohms Data Availability"
+            label: "Series Resistance Ohms Data Availability"
+            description: "Available or Missing for the snapshot series resistance ohms reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "series_res_ohm_availability"
+            name_column: "series_res_ohm_availability"
+          -
+            unique_name: "Fill Factor Current Data Availability"
+            label: "Fill Factor Current Data Availability"
+            description: "Available or Missing for the snapshot fill factor current reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "fill_factor_now_availability"
+            name_column: "fill_factor_now_availability"
+          -
+            unique_name: "Fill Factor Initial Data Availability"
+            label: "Fill Factor Initial Data Availability"
+            description: "Available or Missing for the snapshot fill factor initial reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "fill_factor_initial_availability"
+            name_column: "fill_factor_initial_availability"
+          -
+            unique_name: "Efficiency Loss Percent Data Availability"
+            label: "Efficiency Loss Percent Data Availability"
+            description: "Available or Missing for the snapshot efficiency loss percent reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "eff_loss_pct_availability"
+            name_column: "eff_loss_pct_availability"
+          -
+            unique_name: "Soiling Loss Percent Data Availability"
+            label: "Soiling Loss Percent Data Availability"
+            description: "Available or Missing for the snapshot soiling loss percent reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "soil_loss_pct_availability"
+            name_column: "soil_loss_pct_availability"
+          -
+            unique_name: "Instantaneous Efficiency Percent Data Availability"
+            label: "Instantaneous Efficiency Percent Data Availability"
+            description: "Available or Missing for the snapshot instantaneous efficiency percent reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "instant_eff_pct_availability"
+            name_column: "instant_eff_pct_availability"
+          -
+            unique_name: "Spectral Mismatch Percent Data Availability"
+            label: "Spectral Mismatch Percent Data Availability"
+            description: "Available or Missing for the snapshot spectral mismatch percent reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "spectral_mismatch_availability"
+            name_column: "spectral_mismatch_availability"
+          -
+            unique_name: "Cumulative Degradation Percent Data Availability"
+            label: "Cumulative Degradation Percent Data Availability"
+            description: "Available or Missing for the snapshot cumulative degradation percent reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "cumulative_deg_pct_availability"
+            name_column: "cumulative_deg_pct_availability"
+          -
+            unique_name: "Availability Percent Data Availability"
+            label: "Availability Percent Data Availability"
+            description: "Available or Missing for the snapshot availability percent reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "availability_pct_availability"
+            name_column: "availability_pct_availability"
+          -
+            unique_name: "Reported Energy Yield KWh Data Availability"
+            label: "Reported Energy Yield KWh Data Availability"
+            description: "Available or Missing for the snapshot reported energy yield kwh reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "energy_yield_kwh_availability"
+            name_column: "energy_yield_kwh_availability"
+          -
+            unique_name: "Reported Performance Ratio Data Availability"
+            label: "Reported Performance Ratio Data Availability"
+            description: "Available or Missing for the snapshot reported performance ratio reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "performance_ratio_availability"
+            name_column: "performance_ratio_availability"
+          -
+            unique_name: "Capacity Factor Percent Data Availability"
+            label: "Capacity Factor Percent Data Availability"
+            description: "Available or Missing for the snapshot capacity factor percent reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "capacity_factor_pct_availability"
+            name_column: "capacity_factor_pct_availability"
+          -
+            unique_name: "Specific Energy Yield KWh Per KW Data Availability"
+            label: "Specific Energy Yield KWh Per KW Data Availability"
+            description: "Available or Missing for the snapshot specific energy yield kwh per kw reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "specific_yield_kwh_kw_availability"
+            name_column: "specific_yield_kwh_kw_availability"
+          -
+            unique_name: "Diffuse Horizontal Irradiance W Per M2 Data Availability"
+            label: "Diffuse Horizontal Irradiance W Per M2 Data Availability"
+            description: "Available or Missing for the snapshot diffuse horizontal irradiance w per m2 reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "dhi_w_m2_availability"
+            name_column: "dhi_w_m2_availability"
+          -
+            unique_name: "Direct Normal Irradiance W Per M2 Data Availability"
+            label: "Direct Normal Irradiance W Per M2 Data Availability"
+            description: "Available or Missing for the snapshot direct normal irradiance w per m2 reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "dni_w_m2_availability"
+            name_column: "dni_w_m2_availability"
+          -
+            unique_name: "Global Horizontal Irradiance W Per M2 Data Availability"
+            label: "Global Horizontal Irradiance W Per M2 Data Availability"
+            description: "Available or Missing for the snapshot global horizontal irradiance w per m2 reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "ghi_w_m2_availability"
+            name_column: "ghi_w_m2_availability"
+          -
+            unique_name: "Plane Of Array Irradiance W Per M2 Data Availability"
+            label: "Plane Of Array Irradiance W Per M2 Data Availability"
+            description: "Available or Missing for the snapshot plane of array irradiance w per m2 reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "poa_irr_w_m2_availability"
+            name_column: "poa_irr_w_m2_availability"
+          -
+            unique_name: "UV Index Data Availability"
+            label: "UV Index Data Availability"
+            description: "Available or Missing for the snapshot uv index reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "uv_index_availability"
+            name_column: "uv_index_availability"
+          -
+            unique_name: "Cloud Cover Percent Data Availability"
+            label: "Cloud Cover Percent Data Availability"
+            description: "Available or Missing for the snapshot cloud cover percent reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "cloud_cover_pct_availability"
+            name_column: "cloud_cover_pct_availability"
+          -
+            unique_name: "Air Pressure HPa Data Availability"
+            label: "Air Pressure HPa Data Availability"
+            description: "Available or Missing for the snapshot air pressure hpa reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "air_pressure_hpa_availability"
+            name_column: "air_pressure_hpa_availability"
+          -
+            unique_name: "Dust Density Kg M3 Data Availability"
+            label: "Dust Density Kg M3 Data Availability"
+            description: "Available or Missing for the snapshot dust density kg m3 reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "dust_density_kg_m3_availability"
+            name_column: "dust_density_kg_m3_availability"
+          -
+            unique_name: "Relative Humidity Percent Data Availability"
+            label: "Relative Humidity Percent Data Availability"
+            description: "Available or Missing for the snapshot relative humidity percent reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "relative_humidity_pct_availability"
+            name_column: "relative_humidity_pct_availability"
+          -
+            unique_name: "Cell Temperature C Data Availability"
+            label: "Cell Temperature C Data Availability"
+            description: "Available or Missing for the snapshot cell temperature c reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "cell_temp_c_availability"
+            name_column: "cell_temp_c_availability"
+          -
+            unique_name: "Ambient Temperature C Data Availability"
+            label: "Ambient Temperature C Data Availability"
+            description: "Available or Missing for the snapshot ambient temperature c reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "ambient_temp_c_availability"
+            name_column: "ambient_temp_c_availability"
+          -
+            unique_name: "Rain Mm Data Availability"
+            label: "Rain Mm Data Availability"
+            description: "Available or Missing for the snapshot rain mm reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "rain_mm_availability"
+            name_column: "rain_mm_availability"
+          -
+            unique_name: "Wind Direction Degrees Data Availability"
+            label: "Wind Direction Degrees Data Availability"
+            description: "Available or Missing for the snapshot wind direction degrees reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "wind_dir_deg_availability"
+            name_column: "wind_dir_deg_availability"
+          -
+            unique_name: "Snow Cover Percent Data Availability"
+            label: "Snow Cover Percent Data Availability"
+            description: "Available or Missing for the snapshot snow cover percent reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "snow_cover_pct_availability"
+            name_column: "snow_cover_pct_availability"
+          -
+            unique_name: "Wind Speed M S Data Availability"
+            label: "Wind Speed M S Data Availability"
+            description: "Available or Missing for the snapshot wind speed m s reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "wind_speed_m_s_availability"
+            name_column: "wind_speed_m_s_availability"
+          -
+            unique_name: "Tracker Angle Degrees Data Availability"
+            label: "Tracker Angle Degrees Data Availability"
+            description: "Available or Missing for the snapshot tracker angle degrees reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "tracker_angle_deg_availability"
+            name_column: "tracker_angle_deg_availability"
+          -
+            unique_name: "Hotspot Count Data Availability"
+            label: "Hotspot Count Data Availability"
+            description: "Available or Missing for the snapshot hotspot count reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "hotspot_count_availability"
+            name_column: "hotspot_count_availability"
+          -
+            unique_name: "Microcrack Count Data Availability"
+            label: "Microcrack Count Data Availability"
+            description: "Available or Missing for the snapshot microcrack count reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "microcrack_count_availability"
+            name_column: "microcrack_count_availability"
+          -
+            unique_name: "Cleaning Cycle Days Data Availability"
+            label: "Cleaning Cycle Days Data Availability"
+            description: "Available or Missing for the snapshot cleaning cycle days reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "cleaning_cycle_days_availability"
+            name_column: "cleaning_cycle_days_availability"
+          -
+            unique_name: "Mean Time Between Failures Hours Data Availability"
+            label: "Mean Time Between Failures Hours Data Availability"
+            description: "Available or Missing for the snapshot mean time between failures hours reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "mtbfh_availability"
+            name_column: "mtbfh_availability"
+          -
+            unique_name: "Mean Time To Repair Hours Data Availability"
+            label: "Mean Time To Repair Hours Data Availability"
+            description: "Available or Missing for the snapshot mean time to repair hours reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "mttrh_availability"
+            name_column: "mttrh_availability"
+          -
+            unique_name: "Maintenance Cost Data Availability"
+            label: "Maintenance Cost Data Availability"
+            description: "Available or Missing for the snapshot maintenance cost reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "maintcost_availability"
+            name_column: "maintcost_availability"
+          -
+            unique_name: "Cleaning Cost Data Availability"
+            label: "Cleaning Cost Data Availability"
+            description: "Available or Missing for the snapshot cleaning cost reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "cleancost_availability"
+            name_column: "cleancost_availability"
+          -
+            unique_name: "Replacement Cost Data Availability"
+            label: "Replacement Cost Data Availability"
+            description: "Available or Missing for the snapshot replacement cost reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "replcost_availability"
+            name_column: "replcost_availability"
+          -
+            unique_name: "Revenue Loss Data Availability"
+            label: "Revenue Loss Data Availability"
+            description: "Available or Missing for the snapshot revenue loss reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "revenue_loss_availability"
+            name_column: "revenue_loss_availability"
+          -
+            unique_name: "Alert Events Data Availability"
+            label: "Alert Events Data Availability"
+            description: "Available or Missing for the snapshot alert events reading; filters the same population as its observation count."
+            dataset: "Solar Snapshots"
+            key_columns:
+              - "alert_events_availability"
+            name_column: "alert_events_availability"
+is_degenerate: true

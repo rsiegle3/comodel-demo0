@@ -1,0 +1,7 @@
+unique_name: "Open Circuit Voltage Initial V Observation Count"
+object_type: "metric"
+label: "Open Circuit Voltage Initial V Observation Count"
+description: "Number of non-missing open circuit voltage initial v snapshot readings; the matching Data Availability attribute identifies this population."
+dataset: "Solar Snapshots"
+column: "voc_initial_v"
+calculation_method: "count non-null"

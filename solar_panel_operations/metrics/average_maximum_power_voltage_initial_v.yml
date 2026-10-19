@@ -1,0 +1,7 @@
+unique_name: "Average Maximum Power Voltage Initial V"
+object_type: "metric"
+label: "Average Maximum Power Voltage Initial V"
+description: "Maximum Power Voltage Initial V per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
+dataset: "Solar Snapshots"
+column: "vmp_initial_v"
+calculation_method: "average"

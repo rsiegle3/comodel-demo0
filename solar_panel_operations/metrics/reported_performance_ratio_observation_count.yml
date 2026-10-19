@@ -1,0 +1,7 @@
+unique_name: "Reported Performance Ratio Observation Count"
+object_type: "metric"
+label: "Reported Performance Ratio Observation Count"
+description: "Number of non-missing reported performance ratio snapshot readings; the matching Data Availability attribute identifies this population."
+dataset: "Solar Snapshots"
+column: "performance_ratio"
+calculation_method: "count non-null"

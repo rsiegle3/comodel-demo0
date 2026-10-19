@@ -1,0 +1,7 @@
+unique_name: "Power Quality Index Observation Count"
+object_type: "metric"
+label: "Power Quality Index Observation Count"
+description: "Number of non-missing power quality index snapshot readings; the matching Data Availability attribute identifies this population."
+dataset: "Solar Snapshots"
+column: "power_quality_idx"
+calculation_method: "count non-null"

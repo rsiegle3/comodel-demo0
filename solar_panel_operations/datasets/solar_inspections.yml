@@ -1,0 +1,22 @@
+unique_name: "Solar Inspections"
+object_type: "dataset"
+label: "Solar Inspections"
+description: "Solar Inspections source rows for solar operational analysis."
+connection_id: "Solar PostgreSQL"
+columns:
+  -
+    name: "inspectmode"
+    data_type: "string"
+  -
+    name: "inspectres"
+    data_type: "string"
+  -
+    name: "inspectdt"
+    data_type: "date"
+  -
+    name: "maintsched"
+    data_type: "string"
+  -
+    name: "dqscore"
+    data_type: "double"
+table: "inspection"

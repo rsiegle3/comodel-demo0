@@ -1,0 +1,7 @@
+unique_name: "Plane Of Array Irradiance W Per M2 Observation Count"
+object_type: "metric"
+label: "Plane Of Array Irradiance W Per M2 Observation Count"
+description: "Number of non-missing plane of array irradiance w per m2 snapshot readings; the matching Data Availability attribute identifies this population."
+dataset: "Solar Snapshots"
+column: "poa_irr_w_m2"
+calculation_method: "count non-null"

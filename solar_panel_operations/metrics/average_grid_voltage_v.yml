@@ -1,0 +1,7 @@
+unique_name: "Average Grid Voltage V"
+object_type: "metric"
+label: "Average Grid Voltage V"
+description: "Grid Voltage V per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
+dataset: "Solar Snapshots"
+column: "grid_voltage_v"
+calculation_method: "average"

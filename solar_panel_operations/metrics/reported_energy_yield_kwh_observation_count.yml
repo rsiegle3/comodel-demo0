@@ -1,0 +1,7 @@
+unique_name: "Reported Energy Yield KWh Observation Count"
+object_type: "metric"
+label: "Reported Energy Yield KWh Observation Count"
+description: "Number of non-missing reported energy yield kwh snapshot readings; the matching Data Availability attribute identifies this population."
+dataset: "Solar Snapshots"
+column: "energy_yield_kwh"
+calculation_method: "count non-null"

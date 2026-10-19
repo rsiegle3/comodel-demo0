@@ -1,0 +1,7 @@
+unique_name: "Power Loss W Observation Count"
+object_type: "metric"
+label: "Power Loss W Observation Count"
+description: "Number of non-missing power loss w snapshot readings; the matching Data Availability attribute identifies this population."
+dataset: "Solar Snapshots"
+column: "power_loss_w"
+calculation_method: "count non-null"

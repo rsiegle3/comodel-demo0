@@ -1,0 +1,7 @@
+unique_name: "Open Circuit Voltage Current V Observation Count"
+object_type: "metric"
+label: "Open Circuit Voltage Current V Observation Count"
+description: "Number of non-missing open circuit voltage current v snapshot readings; the matching Data Availability attribute identifies this population."
+dataset: "Solar Snapshots"
+column: "voc_now_v"
+calculation_method: "count non-null"

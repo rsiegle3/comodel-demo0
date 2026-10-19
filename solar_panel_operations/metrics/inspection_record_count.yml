@@ -1,0 +1,7 @@
+unique_name: "Inspection Record Count"
+object_type: "metric"
+label: "Inspection Record Count"
+description: "Independent inspection method records; not a count of plant visits."
+dataset: "Solar Inspections"
+column: "inspectmode"
+calculation_method: "count distinct"

@@ -1,0 +1,7 @@
+unique_name: "Average Tracker Angle Degrees"
+object_type: "metric"
+label: "Average Tracker Angle Degrees"
+description: "Tracker Angle Degrees per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
+dataset: "Solar Snapshots"
+column: "tracker_angle_deg"
+calculation_method: "average"

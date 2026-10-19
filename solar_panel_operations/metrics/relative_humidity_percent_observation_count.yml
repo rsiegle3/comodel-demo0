@@ -1,0 +1,7 @@
+unique_name: "Relative Humidity Percent Observation Count"
+object_type: "metric"
+label: "Relative Humidity Percent Observation Count"
+description: "Number of non-missing relative humidity percent snapshot readings; the matching Data Availability attribute identifies this population."
+dataset: "Solar Snapshots"
+column: "relative_humidity_pct"
+calculation_method: "count non-null"

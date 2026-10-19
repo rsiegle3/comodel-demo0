@@ -1,0 +1,7 @@
+unique_name: "Soiling Loss Percent Observation Count"
+object_type: "metric"
+label: "Soiling Loss Percent Observation Count"
+description: "Number of non-missing soiling loss percent snapshot readings; the matching Data Availability attribute identifies this population."
+dataset: "Solar Snapshots"
+column: "soil_loss_pct"
+calculation_method: "count non-null"

@@ -1,0 +1,7 @@
+unique_name: "Power Factor Observation Count"
+object_type: "metric"
+label: "Power Factor Observation Count"
+description: "Number of non-missing power factor snapshot readings; the matching Data Availability attribute identifies this population."
+dataset: "Solar Snapshots"
+column: "power_factor"
+calculation_method: "count non-null"

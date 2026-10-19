@@ -1,0 +1,7 @@
+unique_name: "Average Relative Humidity Percent"
+object_type: "metric"
+label: "Average Relative Humidity Percent"
+description: "Relative Humidity Percent per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
+dataset: "Solar Snapshots"
+column: "relative_humidity_pct"
+calculation_method: "average"

@@ -1,0 +1,7 @@
+unique_name: "Average Replacement Cost"
+object_type: "metric"
+label: "Average Replacement Cost"
+description: "Replacement Cost per recorded observation; missing readings are excluded, not treated as zero. Source currency is unspecified; this is a snapshot amount, not an audited transaction total."
+dataset: "Solar Snapshots"
+column: "replcost"
+calculation_method: "average"

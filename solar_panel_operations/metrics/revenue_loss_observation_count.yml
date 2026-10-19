@@ -1,0 +1,7 @@
+unique_name: "Revenue Loss Observation Count"
+object_type: "metric"
+label: "Revenue Loss Observation Count"
+description: "Number of non-missing revenue loss snapshot readings; the matching Data Availability attribute identifies this population."
+dataset: "Solar Snapshots"
+column: "revenue_loss"
+calculation_method: "count non-null"

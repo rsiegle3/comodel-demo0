@@ -1,0 +1,7 @@
+unique_name: "Average Alert Events"
+object_type: "metric"
+label: "Average Alert Events"
+description: "Alert Events per recorded observation; missing readings are excluded, not treated as zero. Describes observed readings, not nameplate specifications or a sum across time."
+dataset: "Solar Snapshots"
+column: "alert_events"
+calculation_method: "average"

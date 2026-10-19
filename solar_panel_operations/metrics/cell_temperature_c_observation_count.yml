@@ -1,0 +1,7 @@
+unique_name: "Cell Temperature C Observation Count"
+object_type: "metric"
+label: "Cell Temperature C Observation Count"
+description: "Number of non-missing cell temperature c snapshot readings; the matching Data Availability attribute identifies this population."
+dataset: "Solar Snapshots"
+column: "cell_temp_c"
+calculation_method: "count non-null"

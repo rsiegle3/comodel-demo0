@@ -1,0 +1,7 @@
+unique_name: "Hotspot Count Observation Count"
+object_type: "metric"
+label: "Hotspot Count Observation Count"
+description: "Number of non-missing hotspot count snapshot readings; the matching Data Availability attribute identifies this population."
+dataset: "Solar Snapshots"
+column: "hotspot_count"
+calculation_method: "count non-null"
