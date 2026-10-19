@@ -1,0 +1,49 @@
+unique_name: __CATALOG_NAME__
+object_type: catalog
+label: __CATALOG_LABEL__
+description: "SML semantic models built by an LLM agent (Claude Code + the AtScale MCP) directly from a warehouse schema, with no pre-existing semantic model to copy. No model yet. The agent replaces this sentence with the subject area and the models once they exist."
+version: 1.7
+aggressive_agg_promotion: false
+build_speculative_aggs: false
+ai_context:
+  - source_type: other
+    source: repo layout convention - one root directory per model
+    instruction: >-
+      Repository layout, binding on every model built here. Each model gets its OWN directory at the
+      repository root, named after the model in snake_case, and that directory holds the model's own
+      connections/, datasets/, dimensions/, metrics/, calculations/ and models/ subfolders. Do not
+      write SML objects into a connections/, datasets/, dimensions/, metrics/, calculations/ or
+      models/ folder at the repository root - the root holds only catalog.yml, README.md, AGENTS.md,
+      PROMPT.md, scripts/ and the per-model directories. sml-cli recurses, so catalog.yml stays at the
+      root and covers every model directory beneath it. unique_name and label uniqueness is repo-wide
+      and NOT per directory, so a new model's objects need names that do not collide with any other
+      model's - prefix or qualify them (Snapshot Year, not Year). The model's unique_name must not
+      equal the catalog's unique_name (__CATALOG_NAME__).
+  - source_type: warehouse
+    source: AtScale connection "__CONNECTION_ID__" (database __DATABASE__, schema __SCHEMA__)
+    instruction: >-
+      The ONLY data source for this model. Declare one SML connection with as_connection:
+      __CONNECTION_ID__, database __DATABASE__, schema __SCHEMA__. Do not point the model at any other
+      connection. Discover the tables, columns, keys, JSON fields and sample values yourself with the
+      AtScale MCP explore_datasource tool (list tables, then column details and sample data) and any
+      native column comments; no catalog, glossary or reference model is available, so every join and
+      every description is authored from what the warehouse shows. A derived (sql:) dataset is not
+      resolved against its connection's schema at query time, so qualify every table inside it
+      (schema.table), while physical table: datasets take the bare table name. A derived dataset's
+      column entries must not carry sql:. Where a column holds a JSON document, read the nested paths
+      and expose the fields you model as dataset columns, casting to a numeric type where the value
+      is a number. Text-typed numbers (currency, "6 events", "12.5%") need a safe cast, for example
+      substring(replace(x, ',', '') from '-?[0-9]+\.?[0-9]*')::float8 on Postgres.
+  - source_type: other
+    source: build and quality rules
+    instruction: >-
+      Do not read, copy or derive from any other semantic model on this machine; build from the
+      warehouse alone. Descriptions are quoted YAML scalars in plain ASCII, because an unquoted value
+      containing a colon and space parses as a mapping. Keep unique_name label-based, since a deployed
+      column takes its name from unique_name rather than label. A model's dimensions: list holds
+      degenerate dimensions only; every other dimension is wired through a model relationships:
+      entry. Author ratios and formulas as metric_calc over component measures, never as a
+      pre-aggregated column. Verify the data before describing it: state only figures you measured.
+      After every deploy, run at least one live run_query per dimension and validate every
+      metric_calc expression with validate_mdx_expression, because validate and deploy both pass on
+      SQL that has never been executed.
